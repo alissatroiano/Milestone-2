@@ -77,7 +77,7 @@ function showScores() {
 
 // create questions here
 var questions = [
-    new Question("Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?", ["Dimmuborgir Dark Castle, Iceland", "Kilkenny Castle, Ireland", "Doune Castle, Scotland"], "Doune Castle, Scotland"),
+    new Question("Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?", ["Winsor Castle, Wi", "Kilkenny Castle, Ireland", "Doune Castle, Scotland"], "Doune Castle, Scotland"),
     new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
     new Question("Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
     new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),

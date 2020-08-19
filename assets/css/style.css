@@ -29,17 +29,17 @@
  
 button#btn0, button#btn1, button#btn2, button#btn3 {
     background-color: #000;
-    width: 200px;
-    font-size: 20px;
+    width: 250px;
+    font-size: 1.1rem;
     color: #fff;
-    margin: 10px 40px 10px 40px;
+    margin: 20px 40px 20px 40px;
     padding: 20px 20px;
     border: 1px solid #000;
 }
  
 button#btn0:hover, button#btn1:hover, button#btn2:hover, button#btn3:hover {
     cursor: pointer;
-    background-color: #01BBFF;
+    background-color: #b00d0d;
 }
  
 button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
@@ -64,7 +64,7 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 .answer-container {
     height: 50vh;
     font-family: 'Futura-PT', sans-serif;
-    background-color: red;
+    background-color: #5e0808;
     text-align: center;
 }
 
@@ -80,12 +80,44 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
         font-family: 'Futura-PT', sans-serif;
         background-color: #000;
         text-align: center;
+    } 
+    #question {
+        font-family: "monospace";
+        font-size: 30px;
+        color: #fafafa;
+        padding-top: 220px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        margin: 0px 80px;
     }
-    
+    .buttons {
+        margin-top: 150px;
+        padding: 20px 20px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-grid;
+    } 
     .answer-container {
         height: 100vh;
         font-family: 'Futura-PT', sans-serif;
-        background-color: red;
+        background-color: #5e0808;
         text-align: center;
+    }
+    #progress {
+        color: #fafafa;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 30px;
+    }
+    button#btn0, button#btn1, button#btn2, button#btn3 {
+        background-color: #000;
+        width: 300px;
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 20px 40px 20px 40px;
+        padding: 20px 20px;
+        border: 1px solid #000;
     }
 }

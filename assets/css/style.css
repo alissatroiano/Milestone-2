@@ -82,7 +82,6 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 }
 
 .answer-container {
-    height: 50vh;
     font-family: 'Futura-PT', sans-serif;
     background-color: #5e0808;
     text-align: center;
@@ -128,7 +127,7 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
         font-size: 18px;
         text-align: center;
         margin-top: 40px;
-        padding-top: 20px;
+        padding-top: 10px;
     }
     button#btn0, button#btn1, button#btn2, button#btn3 {
         background-color: #000;
@@ -138,13 +137,5 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
         margin: 20px 40px 20px 40px;
         padding: 20px 20px;
         border: 1px solid #000;
-    }
-    h1 {
-        font-family: 'Trajan-Pro-3', serif;
-        padding-top: 15rem;
-        color: #fafafa;
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
     }
 }

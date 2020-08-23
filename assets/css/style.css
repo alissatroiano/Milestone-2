@@ -5,6 +5,7 @@ body {
     background-color: #fff;
     margin: 0 auto;
     font-size: 16px;
+    overflow: scroll;
 }
 
 h1 {
@@ -79,6 +80,7 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
     font-family: 'Futura-PT', sans-serif;
     background-color: #000;
     text-align: center;
+    overflow: hidden;
 }
 
 .answer-container {
@@ -137,5 +139,8 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
         margin: 20px 40px 20px 40px;
         padding: 20px 20px;
         border: 1px solid #000;
+    }
+    h1 {
+        padding-top: 15rem;
     }
 }

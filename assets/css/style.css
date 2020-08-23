@@ -1,15 +1,17 @@
 /*-------------------------- Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-*, ::after, ::before {
-    box-sizing: inline-block;
-}
-
 body {
-    background-color: #fff;
+    background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+    /* bottom, image */
+    url('../images/throne1.jpg');
+    background-size: cover;
+    color: #fafafa;
     margin: 0 auto;
     font-size: 16px;
-    overflow: scroll;
 }
 
 .col-md-6 {
@@ -56,9 +58,9 @@ h1 {
 
 .quiz-container {
     font-family: 'Futura-PT', sans-serif;
-    background-color: #000;
     text-align: center;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 #question {
@@ -86,7 +88,7 @@ h1 {
 
 .answer-container {
     font-family: 'Futura-PT', sans-serif;
-    background-color: #5e0808;
+    background-color: rgba(94, 8, 8, .7);
     text-align: center;
 }
 
@@ -132,7 +134,10 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
     .quiz-container {
         height: 100vh;
         font-family: 'Futura-PT', sans-serif;
-        background-color: #000;
+        background:
+        /* top, transparent red, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7));
         text-align: center;
     } 
     #question {
@@ -151,12 +156,10 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
         vertical-align: middle;
         display: inline-grid;
     } 
-
-
     .answer-container {
         height: 100vh;
         font-family: 'Futura-PT', sans-serif;
-        background-color: #5e0808;
+        background-color: rgba(94, 8, 8, .6);
         text-align: center;
     }
     #progress {

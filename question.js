@@ -1,4 +1,4 @@
-// code by webdevtrick (https://webdevtrick.com)
+// code copied from webdevtrick (https://webdevtrick.com) and altered for this project
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;

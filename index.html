@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css">
       <!--jQuery Script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+    <!--jQuery Confirm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    
     <!--Title-->
     <title>Title</title>
   </head>
@@ -50,32 +53,36 @@
       </nav>
 </header>
 
-
 <div class="container-fluid">
-    <div class="row text-center flex-row">
-        <div class="col-md-6">
-            <div class="quiz-container">
-                <div id="quiz">
-                    <p id="question"></p>
-                </div>
-                <div id="results"></div>
-                <br>
-                <p id="progress"></p>
-            </div>
+  <div class="row text-center flex-row">
+    <div class="col-md-6">
+      <div class="quiz-container">
+        <div id="quiz">
+          <p id="question"></p>
+        </div>
+        <div id="results"></div>
+        <br>
+        <p id="progress"></p>
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+          This is an alert box.
+        </div> 
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="answer-container" style="padding-top:30px;">
+        <div class="buttons">
+          <button id="btn0"><span id="choice0"></span></button>
+          <button id="btn1"><span id="choice1"></span></button>
+          <button id="btn2"><span id="choice2"></span></button>
         </div>
 
-        <div class="col-md-6">
-            <div class="answer-container" style="padding-top:30px;">
-                    <div class="buttons">
-                        <button id="btn0"><span id="choice0"></span></button>
-                        <button id="btn1"><span id="choice1"></span></button>
-                        <button id="btn2"><span id="choice2"></span></button>
-                    </div>
-            </div>
-        </div>
+
+      </div>
     </div>
+  </div>
 </div>
-       
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

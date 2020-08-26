@@ -77,8 +77,13 @@ function showScores() {
 var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",
-        ["Windsor Castle, Windsor", "Kilkenny Castle, Ireland", "Doune Castle, Scotland"],
-        "Doune Castle, Scotland"),
+        [
+            "Windsor Castle, Windsor", 
+            "Kilkenny Castle, Ireland", 
+            "Doune Castle, Scotland"
+        ],
+        "Doune Castle, Scotland"
+        ),
     new Question(
         "Who was the, 'Mad King' (Aerys Targaryen) inspired by?",
         ["Henry VI of England", "Charles VI of France", "Ivan the Terrible"],

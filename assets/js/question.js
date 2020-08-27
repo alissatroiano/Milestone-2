@@ -84,32 +84,85 @@ var questions = [
         ],
         "Doune Castle, Scotland"
         ),
+
     new Question(
         "Who was the, 'Mad King' (Aerys Targaryen) inspired by?",
-        ["Henry VI of England", "Charles VI of France", "Ivan the Terrible"],
-        "Charles VI of France"),
+        [
+            "Henry VI of England",
+            "Charles VI of France", 
+            "Ivan the Terrible"
+        ],
+        "Charles VI of France"
+        ),
+
     new Question(
         "Which of these events inspired George R.R Martin's Red Wedding?",
-        ["The Black Massacre of 1430", "The Red Banquet of 1610", "The Black Dinner of 1440"],
-        "The Black Dinner of 1440"),
+        [
+            "The Black Massacre of 1430", 
+            "The Red Banquet of 1610", 
+            "The Black Dinner of 1440"
+        ],
+        "The Black Dinner of 1440"
+        ),
+
     new Question(
         "Which real family in history were the cannibal wildlings inspired by?",
-        ["The Bloodthirsty Thenns", "The Sawney Bean Family", "The Hungry Hungarians"],
-        "The Sawney Bean Family"),
+        [
+            "The Bloodthirsty Thenns",
+            "The Sawney Bean Family", 
+            "The Hungry Hungarians"
+        ],
+        "The Sawney Bean Family"
+        ),
+
     new Question(
         "Which historical landmark inspired George R.R Martin to create 'The Wall'?",
-        ["The Bloodthirsty Thenns", "The Sawney Bean Family", "The Hungry Hungarians"],
-        "The Sawney Bean Family"),
+        [
+            "The Great Wall Of China, China", 
+            "Hadrian’s Wall, England", 
+            "Wall of Babylon, Iraq"
+        ],
+        "Hadrian’s Wall, England"
+        ),
+
     new Question(
-        "King's Landing' was filmed in which location",
-        ["Crete, Greece", "Vis, Croatia", "Dubrovnik, Croatia"],
-        "Dubrovnik, Croatia"),
+        "King's Landing' was filmed in which location?",
+        [
+            "Crete, Greece", 
+            "Vis, Croatia", 
+            "Dubrovnik, Croatia"
+        ],
+        "Dubrovnik, Croatia"
+        ),
+
     new Question(
         "Which King's death inspired King Jeoffrey Baratheon's deadly, 'Purple Wedding'?",
-        ["Henry VII of Luxembourg, the Holy Roman Emperor", "King Charles I of England", "Eustace IV, Count of Boulogne"],
-        "Eustace IV, Count of Boulogne"),
+        [
+            "Henry VII of Luxembourg, the Holy Roman Emperor", 
+            "King Charles I of England", 
+            "Eustace IV, Count of Boulogne"
+        ],
+        "Eustace IV, Count of Boulogne"
+        ),
 
-    new Question("Which war from history inspired Game Of Thrones', 'The War of Five Kings?", ["The War of Roses", "Vietnam", "World War I"], "War Of Roses")
+    new Question("Which war from history inspired Game Of Thrones', 'The War of Five Kings?",
+    [
+        "The War of Roses", 
+        "Vietnam", 
+        "World War I"
+    ],
+        "The War Of Roses"
+    ),
+
+    new Question(
+          "Where did Game Of Thrones film the, 'Water Gardens of Dorne?",
+    [
+        "Gardens of Versailles - Versailles, France",
+        "Alcázar of Seville - Seville, Spain",
+        "Powerscourt Gardens - Enniskerry, County Wicklow, Ireland"
+
+    ],
+    ),
 ];
 
 // create quizs
@@ -117,3 +170,4 @@ var quiz = new Quiz(questions);
 
 // display quiz
 populate();
+myFunction();

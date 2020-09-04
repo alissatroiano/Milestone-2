@@ -95,7 +95,7 @@ var questions = [
         ],
         "Doune Castle, Scotland",
         "Doune Castle is one of several sites in the UK being transformed into the world of Westeros to celebrate the legacy of the hit HBO series. The medieval stronghold, north of Stirling, was used as a filming location for the pilot episode, doubling as the Stark family home.",
-        "assets/images/throne1.jpg"
+        "assets/images/dounecastle.jpg"
     ),
 
     new Question(
@@ -109,7 +109,6 @@ var questions = [
         "Much like the Mad King, Aerys Targaryen, King Charles VI of France was popular, charming, and successful before he went mad. In his last days, The Mad King wanted to, 'burn them all'. Charles VI became convinced he was made of glass and insisted on wearing iron rods in his clothes to prevent anyone from, 'breaking' him.",
         "assets/images/zones.png"
 
-
         ),
 
     new Question(
@@ -120,7 +119,8 @@ var questions = [
             "The Black Dinner of 1440"
         ],
         "The Black Dinner of 1440",
-        "Author George R.R. Martin has said that the inspiration for the famously horrific, Red Wedding, came from Scotland's Black Dinner of 1440, where the teenage Earl, William Douglas, was invited to a dinner with King James. Similar to the demise of Robb Stark, young William his brother were seized, taken from the hall and murdered."
+        "Author George R.R. Martin has said that the inspiration for the famously horrific, Red Wedding, came from Scotland's Black Dinner of 1440, where the teenage Earl, William Douglas, was invited to a dinner with King James. Similar to the demise of Robb Stark, young William his brother were seized, taken from the hall and murdered.",
+        "assets/images/charlesvi.jpg"
     ),
 
     new Question(

@@ -106,9 +106,8 @@ var questions = [
             "Ivan the Terrible"
         ],
         "Charles VI of France",
-        "Much like the Mad King, Aerys Targaryen, King Charles VI of France was popular, charming, and successful before he went mad. In his last days, The Mad King wanted to, 'burn them all'. Charles VI became convinced he was made of glass and insisted on wearing iron rods in his clothes to prevent anyone from, 'breaking' him.",
-        "assets/images/zones.png"
-
+        "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful prior to going crazy.",
+        "assets/images/madkings.jpg"
         ),
 
     new Question(
@@ -119,7 +118,7 @@ var questions = [
             "The Black Dinner of 1440"
         ],
         "The Black Dinner of 1440",
-        "Author George R.R. Martin has said that the inspiration for the famously horrific, Red Wedding, came from Scotland's Black Dinner of 1440, where the teenage Earl, William Douglas, was invited to a dinner with King James. Similar to the demise of Robb Stark, young William his brother were seized, taken from the hall and murdered.",
+        "The inspiration for the, 'Red Wedding,' came from Scotland's Black Dinner of 1440, where the Earl, William Douglas, was tricked into attending a feast that ultimately led to his murder.",
         "assets/images/charlesvi.jpg"
     ),
 

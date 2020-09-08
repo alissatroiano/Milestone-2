@@ -135,11 +135,10 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 /* Modals */
 
 .modal-dialog {
-    width: 75%;
+    width: 85%;
     height: auto;
     float: none;
 }
-
 
 .modal-body {
     background-color: #0a0b0c;
@@ -151,6 +150,14 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 div.modal-header {
     font-size: 2rem;
     text-align: center;
+}
+
+.modal-footer {
+     color: #fafafa;
+     font-family: 'Trajan-Pro-3',
+     serif;
+     text-align: center;
+     font-size: 1rem;
 }
 
 div#description {
@@ -184,6 +191,9 @@ img {
     border-style: none;
     max-width: 100%;
     height: auto;
+    width: 50rem;
+    position: relative;
+    margin: 0 auto;
 }
 
 /*-------------------------- Media Queries */

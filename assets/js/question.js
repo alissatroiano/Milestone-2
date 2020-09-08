@@ -22,6 +22,7 @@ Quiz.prototype.setupAnswerModal = function (questionIndex) {
     $(".modal-title").text(questions[questionIndex].answer);
     $("#description").html(questions[questionIndex].description);
     $("#image").attr("src", questions[questionIndex].image);
+    $(".modal-footer").text(questions[questionIndex].footer);
     $("#modal").modal("show");
 }
 
@@ -29,12 +30,13 @@ Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
 }
 
-function Question(text, choices, answer, description, image) {
+function Question(text, choices, answer, description, image, footer) {
     this.text = text;
     this.choices = choices;
     this.answer = answer;
     this.description = description;
     this.image = image;
+    this.footer = footer;
 }
 
 Question.prototype.isCorrectAnswer = function (choice) {
@@ -94,8 +96,8 @@ var questions = [
             "Doune Castle, Scotland"
         ],
         "Doune Castle, Scotland",
-        "Doune Castle is one of several sites in the UK being transformed into the world of Westeros to celebrate the legacy of the hit HBO series. The medieval stronghold, north of Stirling, was used as a filming location for the pilot episode, doubling as the Stark family home.",
-        "assets/images/dounecastle.jpg"
+        "Medieval stronghold, Doune Castle, was used as a filming location for Winterfell in Game Of Thrones' pilot episode.",
+        "https://media.giphy.com/media/26BRQTezZrKak4BeE/giphy.gif",
     ),
 
     new Question(
@@ -107,7 +109,7 @@ var questions = [
         ],
         "Charles VI of France",
         "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful prior to going crazy.",
-        "assets/images/madkings.jpg"
+        "https://media.giphy.com/media/cI6Qfr0bWjDWM/giphy.gif"
         ),
 
     new Question(
@@ -119,7 +121,7 @@ var questions = [
         ],
         "The Black Dinner of 1440",
         "The inspiration for the, 'Red Wedding,' came from Scotland's Black Dinner of 1440, where the Earl, William Douglas, was tricked into attending a feast that ultimately led to his murder.",
-        "assets/images/charlesvi.jpg"
+        "https://media.giphy.com/media/3oEjHJYwFLAPyMx128/giphy.gif"
     ),
 
     new Question(
@@ -130,7 +132,10 @@ var questions = [
             "The Hungry Hungarians"
         ],
         "The Sawney Bean Family",
-        "Much like the cannibal wildlings, The Sawney Bean family were a cave-dwelling, cannibalistic Scottish clan that made a living by hiding in bushes and jumping out on passers-by, hacking them to death, feasting on their flesh, and stealing their possessions."
+        "In the show it was the, 'Thenns'. In the books it was the ice-river clans. In 16h century Scotland, it was a cave-dwelling, cannibalistic Scottish clan that attacked, murdered and ultimately ate common folk",
+        "https://media.giphy.com/media/3o7qDSozG0KG6RmtBS/giphy.gif",
+        ""
+
     ),
 
     new Question(
@@ -138,10 +143,12 @@ var questions = [
         [
             "The Great Wall Of China, China",
             "Hadrian’s Wall, England",
-            "Wall of Babylon, Iraq"
+            "Wall of Babylon, Iraq",
+            "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
         ],
         "Hadrian’s Wall, England",
-        "In Game of Thrones, the Night's Watch has been guarding, 'The Wall' for centuries. The inspiration for this came from Hadrian's Wall, a historic landmark located between England and Scotland. Built by the invading Roman army 122 AD, Hadrian's wall was meant to be the northern border of the Roman Empire and to keep the ‘barbarians’ out of reach."
+        "In Game of Thrones, the Night's Watch has been guarding, 'The Wall' for centuries. The inspiration for this came from Hadrian's Wall, a historic landmark located between England and Scotland. Built by the invading Roman army 122 AD, Hadrian's wall was meant to be the northern border of the Roman Empire and to keep the ‘barbarians’ out of reach.",
+        "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
     ),
 
     new Question(
@@ -152,7 +159,8 @@ var questions = [
             "Dubrovnik, Croatia"
         ],
         "Dubrovnik, Croatia",
-        "In Game of Thrones, the Night's Watch has been guarding, 'The Wall' for centuries. The inspiration for this came from Hadrian's Wall, a historic landmark located between England and Scotland. Built by the invading Roman army 122 AD, Hadrian's wall was meant to be the northern border of the Roman Empire and to keep the ‘barbarians’ out of reach."
+        "meow",
+        "https://media.giphy.com/media/aARbAkgq690xG/giphy.gif"
     ),
 
     new Question(
@@ -163,7 +171,8 @@ var questions = [
             "Eustace IV, Count of Boulogne"
         ],
         "Eustace IV, Count of Boulogne",
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy."
+        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
+        "https://media.giphy.com/media/Az8qq276ke2BO/giphy.gif"
     ),
 
     new Question(
@@ -174,18 +183,19 @@ var questions = [
             "World War I"
         ],
         "The War of the Roses",
-        "The War of Roses was a series of civil wars fought between two prominent families, the House of Lancaster (red rose) and House of York (white rose) for the throne of England."
+        "The War of Roses was a series of civil wars fought between two prominent families, the House of Lancaster (red rose) and House of York (white rose) for the throne of England.",
+        "https://media.giphy.com/media/3oEjI1erPMTMBFmNHi/giphy.gif"
     ),
 
     new Question(
-        "In which location did Game Of Thrones film the, 'Water Gardens of Dorne?",
+        "When creating, 'The Ironborn', George R.R Martin drew inspiration from which of these historical groups?",
         [
-            "Gardens of Versailles - Versailles, France",
+            "The Wikings",
             "Alcázar of Seville - Seville, Spain",
             "Powerscourt Gardens - Enniskerry, County Wicklow, Ireland"
         ],
-        "Alcázar of Seville - Seville, Spain", 
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy."
+        "The Vikings", 
+        "https://media.giphy.com/media/xT1XGC8nIdwGgjgpa0/giphy.gif"
     ),
 
     new Question(
@@ -196,7 +206,8 @@ var questions = [
             "Ancient Arsen"
         ],
         "Greek Fire",
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy."
+        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
+        "https://media.giphy.com/media/5iU39jxwwq3oQ/giphy.gif"
     )];
 
 // create quizs

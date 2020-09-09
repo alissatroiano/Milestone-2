@@ -64,6 +64,7 @@ function populate() {
     }
 };
 
+// This function creates the submit onclick event while populating the score
 function guess(id, guess) {
     console.log(id, guess);
     var button = document.getElementById(id);
@@ -73,12 +74,14 @@ function guess(id, guess) {
     }
 };
 
+// The showProgress function shows the user what question they are currently answering out of the total number of questions in the game  
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
 
+// The showScores function uses jQuery to display the results of the quiz upon completion
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
@@ -86,8 +89,8 @@ function showScores() {
     element.innerHTML = gameOverHTML;
 };
 
-// create questions here
-var questions = [
+// The questions array is defined here
+let questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",
         [
@@ -95,8 +98,8 @@ var questions = [
             "Kilkenny Castle, Ireland",
             "Doune Castle, Scotland"
         ],
-        "Doune Castle, Scotland",
-        "Medieval stronghold, Doune Castle, was used as a filming location for Winterfell in Game Of Thrones' pilot episode.",
+        "Doune Castle",
+        "In the first few episodes of Game of Thrones, the Winterfell scenes were filmed at Doune Castle in Scotland, which was originally built in the 13th century as a medieval stronghold",
         "https://media.giphy.com/media/26BRQTezZrKak4BeE/giphy.gif",
     ),
 
@@ -132,9 +135,8 @@ var questions = [
             "The Hungry Hungarians"
         ],
         "The Sawney Bean Family",
-        "In the show it was the, 'Thenns'. In the books it was the ice-river clans. In 16h century Scotland, it was a cave-dwelling, cannibalistic Scottish clan that attacked, murdered and ultimately ate common folk",
-        "https://media.giphy.com/media/3o7qDSozG0KG6RmtBS/giphy.gif",
-        ""
+        "In the show it was the, 'Thenns'. In the books it was the ice-river clans. In 16h century Scotland it was The Sawney Bean Cave Family, a cave-dwelling Scottish clan that attacked, murdered and ultimately ate their victims.",
+        "https://media.giphy.com/media/3o7qDSozG0KG6RmtBS/giphy.gif"
 
     ),
 
@@ -147,7 +149,7 @@ var questions = [
             "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
         ],
         "Hadrian’s Wall, England",
-        "In Game of Thrones, the Night's Watch has been guarding, 'The Wall' for centuries. The inspiration for this came from Hadrian's Wall, a historic landmark located between England and Scotland. Built by the invading Roman army 122 AD, Hadrian's wall was meant to be the northern border of the Roman Empire and to keep the ‘barbarians’ out of reach.",
+        "In Game of Thrones, 'The Wall' protected The Seven for centuries. In 122 AD Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
         "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
     ),
 
@@ -188,13 +190,14 @@ var questions = [
     ),
 
     new Question(
-        "When creating, 'The Ironborn', George R.R Martin drew inspiration from which of these historical groups?",
+        "When creating, 'The Ironborn', George R.R Martin drew inspiration from which of these groups?",
         [
-            "The Wikings",
-            "Alcázar of Seville - Seville, Spain",
-            "Powerscourt Gardens - Enniskerry, County Wicklow, Ireland"
+            "The Vikings",
+            "The Nok",
+            "The Ironmade"
         ],
-        "The Vikings", 
+        "The Vikings",
+        "Considering Westeros is a fictional version of medieval England, it makes sense that the, 'Ironborn' resemble the seafaring Vikings.",
         "https://media.giphy.com/media/xT1XGC8nIdwGgjgpa0/giphy.gif"
     ),
 
@@ -206,7 +209,7 @@ var questions = [
             "Ancient Arsen"
         ],
         "Greek Fire",
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
+        "Wildfire was inspired by Greek Fire, a compound used by the Byzantine Greeks in the 7th Century. Just like wildfire, Greek Fire ignited upon contact with water, effectively destorying enemy ships before they reached land.",
         "https://media.giphy.com/media/5iU39jxwwq3oQ/giphy.gif"
     )];
 

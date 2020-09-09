@@ -7,12 +7,8 @@ html {
 }
 
 body {
-    background:
-    /* top, transparent red, faked with gradient */
-    linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)),
-    /* bottom, image */
-    url('../images/throne1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), url('../images/throne1.jpg');
     background-size: cover;
     margin: 0 auto;
     font-size: 16px;
@@ -88,6 +84,11 @@ h1 {
     padding-bottom: 20px;
 }
 
+.container-fluid {
+    margin: 0 auto;
+    overflow: scroll;
+}
+
 /*-------------------------- Multiple Choice Questions */
 
 .answer-container {
@@ -152,12 +153,11 @@ div.modal-header {
     text-align: center;
 }
 
-.modal-footer {
+#modal-footer {
      color: #fafafa;
      font-family: 'Trajan-Pro-3',
      serif;
      text-align: center;
-     font-size: 1rem;
 }
 
 div#description {
@@ -200,13 +200,9 @@ img {
 
 @media only screen and (min-width: 768px) {
     .quiz-container {
-        height: 100vh;
-        font-family: 'Futura-PT', sans-serif;
-        background:
-        /* top, transparent red, faked with gradient */
-        linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7));
         text-align: center;
+         overflow: scroll;
+         height: 100vh;
     } 
     #question {
         font-size: 25px;

@@ -212,6 +212,10 @@ img {
     margin: 0 auto;
 }
 
+.modal-open {
+    overflow: visible;
+}
+
 /*-------------------------- Media Queries */
 
 @media only screen and (min-width: 768px) {
@@ -261,5 +265,8 @@ img {
     }
     h1 {
         padding-top: 15rem;
+    }
+    .modal-open {
+        overflow: visible;
     }
 }

@@ -8,7 +8,7 @@ html {
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url('../images/throne1.jpg');
+        rgba(0, 0, 0, 0.7)), url('../images/throne2.jpg');
     background-size: cover;
     margin: 0 auto;
     font-size: 16px;
@@ -133,13 +133,17 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
     font-size: 20px;
 }
 
-/* Modals */
+/*--------------------------  Modal */
 
-.modal-dialog {
-    width: 85%;
-    height: auto;
-    float: none;
+/* modal-full and .modal-content styles copied from https://www.codeply.com/p/cYh5yLlssd */
+.modal-full {
+    max-width: 60%;
 }
+
+.modal-full .modal-content {
+    min-height: 50%;
+}
+/* end modal-full and modal-content */
 
 .modal-body {
     background-color: #0a0b0c;
@@ -149,15 +153,23 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 }
 
 div.modal-header {
-    font-size: 2rem;
     text-align: center;
+    border-color: none;
+    border: none;
 }
 
-#modal-footer {
+.modal-title {
+    font-size: 2.3rem;
+    margin-top: 20px;
+}
+
+.modal-footer {
      color: #fafafa;
      font-family: 'Trajan-Pro-3',
      serif;
      text-align: center;
+     border: none;
+     background-color: #000;
 }
 
 div#description {
@@ -182,16 +194,20 @@ span:hover {
     color: #fafafa;
 }
 
-.modal-footer {
-    background-color: #0a0b0c;
+button#close-modal {
+    background-color: rgb(94, 8, 8);
+    border: none;
+    color: #fafafa;
+}
+
+#close-modal:hover {
+    background-color: #b00d0d;
+    color: #fafafa;
 }
 
 img {
-    vertical-align: middle;
-    border-style: none;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    width: 50rem;
     position: relative;
     margin: 0 auto;
 }

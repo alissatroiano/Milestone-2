@@ -36,7 +36,11 @@ This document can be viewed [here](assets/images/userstories.jpg)
 
 * The target market research and demographic data used to create User Stories, Wireframes and to pitch this project in README.md was obtained from [Wired.com](https://www.wired.com/2013/06/women-game-of-thrones/), [BusinessInsider.com](https://www.businessinsider.com/game-of-thrones-compared-to-most-popular-tv-shows-of-2018-ratings-2019-4?op=1#2-the-big-bang-theory-cbs-9), [WinterIsComing.net](https://winteriscoming.net/2017/01/16/results-song-of-ice-and-fire-game-of-thrones-demographic-survey/) and [Statista.com](https://www.statista.com/search/?q=A+Game+of+Thrones&qKat=newSearchFilter&sortMethod=idrelevance&isRegionPref=840&sortMethodMobile=idrelevance&statistics=1&dossiers=1&groupA=1&xmo=1&surveys=1&toplists=1&accuracy=and&region%5B%5D=3&isoregion=3&isocountrySearch=&category=0&interval=0&archive=1).
 
-* The information about real historical events that inspired Game Of Thrones from the quiz portion of this project was copied from [BBC](https://www.bbc.co.uk/programmes/articles/4RVybvDdJMq7fjRp5450yX1/the-real-historical-events-that-inspired-game-of-thrones).
+* The information about real historical events that inspired Game Of Thrones from the quiz portion of this project was copied from:
+
+    1. [BBC](https://www.bbc.co.uk/programmes/articles/4RVybvDdJMq7fjRp5450yX1/the-real-historical-events-that-inspired-game-of-thrones).
+
+    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com)
 
 * The information about Scotland's historical Black Dinner was copied from [The Week](https://theweek.com/articles/463588/reallife-events-that-inspired-game-thrones-red-wedding).
 
@@ -69,3 +73,5 @@ This document can be viewed [here](assets/images/userstories.jpg)
 * The JavaScript and jQuery techniques used to build this project were learned during the 'Interactive Frontend Development' portion of [Code Institute's](https://codeinstitute.net/) Full-Stack Software Developer Program.
 
 * [Quackit.com](https://www.quackit.com) for providing this informative article titled, ['HTML audio tag'](https://www.quackit.com/html/tags/html_audio_tag.cfm).
+
+* The markdown used to create this README.md document was learned from [commonmark.org](https://commonmark.org)

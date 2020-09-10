@@ -43,7 +43,7 @@ Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 }
 
-function populate() {
+function play() {
     if (quiz.isEnded()) {
         showScores();
     }
@@ -70,7 +70,7 @@ function guess(id, guess) {
     var button = document.getElementById(id);
     button.onclick = function () {
         quiz.guess(guess);
-        populate();
+        play();
     }
 };
 
@@ -161,7 +161,7 @@ let questions = [
             "Dubrovnik, Croatia"
         ],
         "Dubrovnik, Croatia",
-        "meow",
+        "ENTER NEW TEXT HERE",
         "https://media.giphy.com/media/aARbAkgq690xG/giphy.gif"
     ),
 
@@ -216,5 +216,5 @@ let questions = [
 // create quizs
 var quiz = new Quiz(questions);
 
-// display quiz
-populate();
+// call the play function here to display quiz to users
+play();

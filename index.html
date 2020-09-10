@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- This template was aquired from webdevtrick's JavaScript Quiz Tutorial (https://webdevtrick.com) and altered by the developer for education purposes -->
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +21,13 @@
   <!--jQuery Confirm -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
-
   <!--Title-->
   <title>Game of Zones</title>
 </head>
 
 <body>
   <header>
+    <!-- Navbar copied from getbootstrap.com -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html"><i class="fas fa-crown"></i> Game of Zones</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,48 +37,50 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"> <span class="sr-only">(current)</span></a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#quiz">Play</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <!--Game Container Starts Here-->
+  <!-- Game Container Starts Here-->
   <div class="container-fluid">
     <div class="row text-center">
+      <!--Question column starts here-->
       <div class="col-md-6">
-        <div class="quiz-container">
+        <div class="quiz-column">
+          <!--Quiz div starts here -->
           <div id="quiz">
+            <!--Questions starts here-->
             <p id="question"></p>
+            <!--./end-questions-->
+            <!--Progress function displays here-->
+            <p id="progress"></p>
+            <!--./end-progress-function-->
           </div>
+          <!--./end-quiz-->
           <div id="results"></div>
           <br>
-          <p id="progress"></p>
         </div>
       </div>
-
+      <!--./end-question-column-->
+      <!--Answer column with multiple choices starts here-->
       <div class="col-md-6">
-        <div class="answer-container" style="padding-top:30px;">
+        <div class="answer-column">
+          <!--Answer Buttons containing multiple choice answers/options start here-->
           <div class="buttons">
             <button id="btn0"><span id="choice0"></span></button>
             <button id="btn1"><span id="choice1"></span></button>
             <button id="btn2"><span id="choice2"></span></button>
           </div>
+          <!--./end-answer-buttons-->
         </div>
       </div>
+      <!--./end-answer-column-->
     </div>
   </div>
   <!--./end-game-container-->
@@ -99,20 +99,20 @@
     crossorigin="anonymous"></script>
 
   <script src="assets/js/question.js"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
-  
+
   <!--Modal Starts Here-->
   <div class="modal fade bottom" id="modal" tabindex="-1">
     <div class="modal-dialog modal-full">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class='col-12 modal-title text-center'>
-            </h5>
+          </h5>
 
         </div>
         <div class="modal-body">
-          <img id="image" />
+          <img id="image" alt="image" src="" />
           <div id="description"></div>
         </div>
         <div class="modal-footer justify-content-center">

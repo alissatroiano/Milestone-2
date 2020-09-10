@@ -57,7 +57,7 @@ h1 {
 
 /*-------------------------- Quiz Questions */
 
-.quiz-container {
+.quiz-column {
     font-family: 'Futura-PT', sans-serif;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
@@ -80,7 +80,6 @@ h1 {
     font-size: 1rem;
     text-align: center;
     margin-top: 4rem;
-    padding-top: 60px;
     font-family: 'Trajan-Pro-3', serif;
     padding-bottom: 20px;
 }
@@ -91,10 +90,11 @@ h1 {
 
 /*-------------------------- Multiple Choice Questions */
 
-.answer-container {
+.answer-column {
     font-family: 'Futura-PT', sans-serif;
     background-color: rgba(94, 8, 8, .7);
     text-align: center;
+    padding-top: 30px;
 }
 
 .buttons {
@@ -135,14 +135,7 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 
 /*--------------------------  Modal */
 
-/* modal-full and .modal-content styles copied from https://www.codeply.com/p/cYh5yLlssd */
-.modal-full {
-    max-width: 60%;
-}
 
-.modal-full .modal-content {
-    min-height: 50%;
-}
 /* end modal-full and modal-content */
 
 .modal-body {
@@ -169,7 +162,7 @@ div.modal-header {
      serif;
      text-align: center;
      border: none;
-     background-color: #000;
+     background-color: #0a0b0c;
 }
 
 div#description {
@@ -219,7 +212,7 @@ img {
 /*-------------------------- Media Queries */
 
 @media only screen and (min-width: 768px) {
-    .quiz-container {
+    .quiz-column {
         text-align: center;
          overflow: scroll;
          height: 100vh;
@@ -240,7 +233,7 @@ img {
         vertical-align: middle;
         display: inline-grid;
     } 
-    .answer-container {
+    .answer-column {
         height: 100vh;
         font-family: 'Futura-PT', sans-serif;
         background-color: rgba(94, 8, 8, .6);
@@ -251,22 +244,24 @@ img {
         font-size: 1rem;
         text-align: center;
         margin-top: 40px;
-        padding-top: 90px;
         padding-bottom: 20px;
     }
     button#btn0, button#btn1, button#btn2, button#btn3 {
-        background-color: #000;
+        background-color: #0a0b0c;
         width: 300px;
         font-size: 1.5rem;
         color: #fff;
         margin: 20px 40px 20px 40px;
         padding: 20px 20px;
-        border: 1px solid #000;
+        border: none;
     }
     h1 {
         padding-top: 15rem;
     }
     .modal-open {
         overflow: visible;
+    }
+    .modal-full {
+        max-width: 50%;
     }
 }

@@ -59,7 +59,6 @@ function play() {
             element.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
-
         showProgress();
     }
 };
@@ -81,12 +80,15 @@ function showProgress() {
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
 };
 
-// The showScores function uses jQuery to display the results of the quiz upon completion
+// The showScores function uses jQuery to display the scores of the quiz upon completion
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+    $("#modal").hide();
+    $("div.answer-column").hide();
+    $("div.quiz-column").css("width", "100vw");
 };
 
 // The questions array is defined here

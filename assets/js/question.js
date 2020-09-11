@@ -8,7 +8,7 @@ function Quiz(questions) {
 
 Quiz.prototype.getQuestionIndex = function () {
     return this.questions[this.questionIndex];
-}
+};
 
 Quiz.prototype.guess = function (answer) {
     this.answerModal(this.questionIndex);
@@ -16,7 +16,7 @@ Quiz.prototype.guess = function (answer) {
         this.score++;
     }
     this.questionIndex++;
-} 
+};
 
 Quiz.prototype.answerModal = function (questionIndex) {
     $(".modal-title").text(questions[questionIndex].answer);
@@ -24,7 +24,7 @@ Quiz.prototype.answerModal = function (questionIndex) {
     $("#image").attr("src", questions[questionIndex].image);
     $(".modal-footer").text(questions[questionIndex].footer);
     $("#modal").modal("show");
-}
+};
 
 $("button").on("click", function () {
     $("body.state").toggleClass("dialogIsOpen");
@@ -32,7 +32,7 @@ $("button").on("click", function () {
 
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
-}
+};
 
 function Question(text, choices, answer, description, image, footer) {
     this.text = text;
@@ -45,7 +45,7 @@ function Question(text, choices, answer, description, image, footer) {
 
 Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
-}
+};
 
 function play() {
     if (quiz.isEnded()) {
@@ -65,7 +65,7 @@ function play() {
         }
         showProgress();
     }
-};
+}
 
 // This function creates the submit onclick event while populating the score
 function guess(id, guess) {
@@ -74,15 +74,15 @@ function guess(id, guess) {
     button.onclick = function () {
         quiz.guess(guess);
         play();
-    }
-};
+    };
+}
 
 // The showProgress function shows the user what question they are currently answering out of the total number of questions in the game  
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
-};
+}
 
 // The showScores function uses jQuery to display the scores of the quiz upon completion
 function showScores() {
@@ -93,10 +93,10 @@ function showScores() {
     $("#modal").hide();
     $("div.answer-column").hide();
     $("div.quiz-column").css("width", "100vw");
-};
+}
 
 // The questions array is defined here
-let questions = [
+var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",
         [
@@ -106,7 +106,7 @@ let questions = [
         ],
         "Doune Castle",
         "In the first few episodes of Game of Thrones, the Winterfell scenes were filmed at Doune Castle in Scotland, which was originally built in the 13th century as a medieval stronghold",
-        "https://media.giphy.com/media/26BRQTezZrKak4BeE/giphy.gif",
+        "https://media.giphy.com/media/26BRQTezZrKak4BeE/giphy.gif"
     ),
 
     new Question(
@@ -119,7 +119,7 @@ let questions = [
         "Charles VI of France",
         "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful prior to going crazy.",
         "https://media.giphy.com/media/cI6Qfr0bWjDWM/giphy.gif"
-        ),
+    ),
 
     new Question(
         "Which of these events inspired George R.R Martin's Red Wedding?",

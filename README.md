@@ -39,24 +39,22 @@ This document can be viewed [here](assets/images/userstories.jpg)
 * The information about real historical events that inspired Game Of Thrones from the quiz portion of this project was copied from:
 
     1. [BBC.com](https://www.bbc.co.uk/programmes/articles/4RVybvDdJMq7fjRp5450yX1/the-real-historical-events-that-inspired-game-of-thrones) - to research real events that inspired Game of Thrones.
-    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research valid history behind Game of Thrones. 
+    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research valid history behind Game of Thrones.s
     3. [The Week](https://theweek.com/articles/463588/fromreallife-events-that-inspired-game-thrones-red-wedding) was used to obtain information about Scotland's historical Black Dinner of 1440.
     4. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
     5. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
 
-* The functions used to create the quiz for this project were copied from/learned by following the, 'How to Make a Simple JavaScript Quiz,' tutorial on [Sitepoint.com](https://www.sitepoint.com/simple-javascript-quiz/).
+* The functions used to create the quiz for this project were copied from/learned by following the, 'How to Make a Simple JavaScript Quiz,' tutorial on [Sitepoint.com](https://www.sitepoint.com/simple-javascript-quiz/) and adjusted for this project.
 
 * The code used to embed, hide and autoplay background music was copied from [Quackit.com article, 'HTML Background Music Code'](https://www.quackit.com/html/codes/html_background_music_codes.cfm).
 
-* The code used to embed, hide and autoplay background music was copied from [Quackit.com article, 'HTML Background Music Code'](https://www.quackit.com/html/codes/html_background_music_codes.cfm).
+* The styles and functions used to create the receding modal dialog box were aquired from [CSS Tricks](https://css-tricks.com/receding-background-modal-boxes/).
+
+* The modal dialog box used to display the correct question answers, GIF images and descriptions was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
+
+* The GIF images used in each modal dialog box were copied from [GIPHY](https://giphy.com/).
 
 * The media queries in the stylesheet were copied/learned from [w3schools.com](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
-
-* The research about Hadrian's Wall (and other walls for the incorrect question answers) was aquired from [Telegraph.co](https://www.telegraph.co.uk/travel/lists/the-worlds-most-famous-walls/).
-
-* The incorrect answers in Question 9 of the quiz were obtained from [TripstoDiscover.com](https://www.tripstodiscover.com/22-of-the-worlds-most-magnificent-gardens/).
-
-* The research about Alexander The Great's death was aquired from [History.com](https://www.history.com/topics/ancient-history/alexander-the-great).
 
 ### Media
 

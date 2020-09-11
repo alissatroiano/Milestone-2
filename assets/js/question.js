@@ -11,20 +11,24 @@ Quiz.prototype.getQuestionIndex = function () {
 }
 
 Quiz.prototype.guess = function (answer) {
-    this.setupAnswerModal(this.questionIndex);
+    this.answerModal(this.questionIndex);
     if (this.getQuestionIndex().isCorrectAnswer(answer)) {
         this.score++;
     }
     this.questionIndex++;
 } 
 
-Quiz.prototype.setupAnswerModal = function (questionIndex) {
+Quiz.prototype.answerModal = function (questionIndex) {
     $(".modal-title").text(questions[questionIndex].answer);
     $("#description").html(questions[questionIndex].description);
     $("#image").attr("src", questions[questionIndex].image);
     $(".modal-footer").text(questions[questionIndex].footer);
     $("#modal").modal("show");
 }
+
+$("button").on("click", function () {
+    $("body.state").toggleClass("dialogIsOpen");
+});
 
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;

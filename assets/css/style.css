@@ -3,7 +3,6 @@
 
 html {
     display: inline-block;
-    overflow: auto;
 }
 
 body {
@@ -12,6 +11,10 @@ body {
     background-size: cover;
     margin: 0 auto;
     font-size: 16px;
+}
+
+body.state {
+    transform: translateZ(0);
 }
 
 .col-md-6 {
@@ -135,9 +138,36 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 }
 
 /*--------------------------  Modal */
+/* Styles for receding modal dialog copied from csstricks <https://css-tricks.com/receding-background-modal-boxes/> */
+#modal {
+    position: fixed;
+    width: 100%;
+    /* Embiggen */
+    transform: scale(1.0);
+    opacity: 0;
+    pointer-events: none;
+    overflow: visible;
+}
 
+.dialogIsOpen #page-wrap {
+    filter: blur(3px) grayscale(70%);
+    transform: scale(1.0);
+}
 
-/* end modal-full and modal-content */
+.dialogIsOpen #modal {
+     transform: scale(1);
+     /* prefix me */
+     opacity: 1;
+     /* Clickable */
+     pointer-events: auto;
+}
+
+#page-wrap,
+#modal {
+    transition: all 0.3s ease;
+    /* prefix me */
+
+}
 
 .modal-body {
     background-color: #0a0b0c;
@@ -164,10 +194,11 @@ div.modal-header {
      text-align: center;
      border: none;
      background-color: #0a0b0c;
+     padding-bottom: 40px;
 }
 
 div#description {
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     font-size: 1.2rem;
 }

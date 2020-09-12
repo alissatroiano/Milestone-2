@@ -1,25 +1,23 @@
 
 # A Quiz Of Ice and Fire
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program, A Quiz Of Ice and Fire is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'.
-
-This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery.
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program, A Quiz Of Ice and Fire is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience. 
 
 ## UX
 
-The primary goals of 'A Quiz Of Ice and Fire' are:
+The primary goals of, 'A Quiz Of Ice and Fire' are:
 
 * Create an interactive trivia game that is both informative and fun.
 
-* Present historical information in a learnable, engaging manner.
+* Present historical information in a learnable and fun matter.
 
 A Quiz Of Ice and Fire's target market is comprised of:
 
 * Men & women (ages 18-29) that enjoy historical trivia and are fans of the book series, 'A Song Of Ice and Fire' by George R.R. Martin.
 
-* Global history students and educators. 
+* Men & women (ages 18-29) that work as educators and want to incorporate pop culture into their history lessons.
 
-This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers. 
+NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.
 
 ## UX
 

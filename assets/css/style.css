@@ -6,7 +6,7 @@
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url('../images/throne2.jpg');
+        rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
     background-size: cover;
     margin: 0 auto;
     font-size: 16px;
@@ -20,8 +20,7 @@ body.state {
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
-    height: 50vh;
-}
+ }
 
 /*-------------------------- Ttles, subtitles and special text */
 
@@ -63,7 +62,6 @@ h1 {
     font-family: 'Futura-PT', sans-serif;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    height: 100vh;
 }
 
 #question {
@@ -245,8 +243,7 @@ img {
 @media only screen and (min-width: 768px) {
     .quiz-column {
         text-align: center;
-         overflow: scroll;
-         height: 100vh;
+        height: 100vh;
     } 
     #question {
         font-size: 25px;

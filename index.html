@@ -47,8 +47,6 @@
     </nav>
   </header>
 
-  <!--Wrap page content in a div to create receding background modal-->
-  <div id="page-wrap">
   <!-- Game Container Starts Here-->
   <div class="container-fluid">
     <div class="row text-center">
@@ -65,9 +63,7 @@
             <!--./end-progress-function-->
           </div>
           <!--./end-quiz-->
-          <!--Upon completing the quiz, scores will generate and display for the user here-->
-          <div id="scores"></div>
-          <!--./end-scores-->
+          <div id="results"></div>
           <br>
         </div>
       </div>
@@ -88,11 +84,9 @@
     </div>
   </div>
   <!--./end-game-container-->
-  </div>
-  <!--./end-page-wrap-->
 
-<!--  Scripts Start Here-->
-  <!--Load Bootstrap Scripts-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <!--Copied from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -103,9 +97,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <!--./end-bootstrap-scripts-->
 
   <!--Bootstrap Modal Stats Here (https://getbootstrap.com/docs/4.5/components/modal/)-->
+  <script src="assets/js/question.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <!--Modal Starts Here-->
   <div class="modal fade bottom" id="modal" tabindex="-1">
     <div class="modal-dialog modal-full">
       <div class="modal-content">
@@ -124,10 +121,5 @@
     </div>
   </div>
   <!--./end-modal-->
-
-  <!--Load Custom JS-->
-  <script src="assets/js/question.js"></script>
-  <!--./end-custom-js-->
-
 </body>
 </html>

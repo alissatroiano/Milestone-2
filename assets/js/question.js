@@ -26,10 +26,6 @@ Quiz.prototype.answerModal = function (questionIndex) {
     $("#modal").modal("show");
 };
 
-$("button").on("click", function () {
-    $("body.state").toggleClass("dialogIsOpen");
-});
-
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
 };

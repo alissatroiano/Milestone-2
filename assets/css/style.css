@@ -8,6 +8,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
     background-size: cover;
+    background-position: center;
     margin: 0 auto;
     font-size: 16px;
 }
@@ -93,7 +94,7 @@ h1 {
     padding-top: 30px;
 }
 
-.button {
+.buttons {
     font-weight: 300px;
     padding: 20px 20px;
     text-align: center;
@@ -245,7 +246,6 @@ img {
     }
     button#btn0, button#btn1, button#btn2, button#btn3 {
         background-color: #0a0b0c;
-        width: 300px;
         font-size: 1.5rem;
         color: #fff;
         margin: 20px 40px 20px 40px;

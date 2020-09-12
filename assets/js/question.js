@@ -137,7 +137,7 @@ var questions = [
             "The Hungry Hungarians"
         ],
         "The Sawney Bean Family",
-        "In the show it was the, 'Thenns'. In the books it was the ice-river clans. In 16h century Scotland it was The Sawney Bean Cave Family, a cave-dwelling Scottish clan that attacked, murdered and ultimately ate their victims.",
+        "In the show it was the, 'Thenns'. <br> In the books it was the, 'Ice-River Clans'. <br> In 16h century Scotland it was The Sawney Bean Cave Family, a cave-dwelling Scottish clan that attacked, murdered and ultimately ate their victims.",
         "https://media.giphy.com/media/3o7qDSozG0KG6RmtBS/giphy.gif"
 
     ),
@@ -151,7 +151,7 @@ var questions = [
             "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
         ],
         "Hadrian’s Wall, England",
-        "In Game of Thrones, 'The Wall' protected The Seven for centuries. In 122 AD Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
+        "In, 'Game of Thrones', 'The Wall' has been, 'guarding the realms of men for centuries'. <br> In 122 AD Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
         "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
     ),
 
@@ -175,7 +175,7 @@ var questions = [
             "Eustace IV, Count of Boulogne"
         ],
         "Eustace IV, Count of Boulogne",
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
+        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. <br>King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
         "https://media.giphy.com/media/Az8qq276ke2BO/giphy.gif"
     ),
 

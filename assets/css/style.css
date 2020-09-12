@@ -93,13 +93,18 @@ h1 {
     padding-top: 30px;
 }
 
-.buttons {
+.button {
+    font-weight: 300px;
     padding: 20px 20px;
     text-align: center;
     vertical-align: middle;
     display: inline-grid;
-    font-family: 'Trajan-Pro-3', serif;
+}
+
+span {
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.158rem;
 }
  
 button#btn0, button#btn1, button#btn2, button#btn3 {
@@ -157,9 +162,13 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 }
 
 div#description {
-    padding-top: 30px;
+    padding: 30px 10px 10px 10px;
     text-align: center;
     font-size: 1rem;
+    font-family: 'Futura-PT', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 200;
 }
 
 .modal-header {
@@ -258,5 +267,5 @@ img {
         font-size: 2.5rem;
     }
     div#description {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 }

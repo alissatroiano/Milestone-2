@@ -133,19 +133,16 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 /* Styles for receding modal dialog copied from csstricks <https://css-tricks.com/receding-background-modal-boxes/> */
 .modal-body {
     background-color: #0a0b0c;
+    box-shadow: 1px 1px 1px #2F2F2F;
     color: #fafafa;
     font-family: 'Trajan-Pro-3', serif;
     padding-top: 20px;
-}
-
-div.modal-header {
-    text-align: center;
     border-color: none;
     border: none;
 }
 
 .modal-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 20px;
 }
 
@@ -162,7 +159,7 @@ div.modal-header {
 div#description {
     padding-top: 30px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .modal-header {
@@ -257,4 +254,9 @@ img {
     .modal-full {
         max-width: 50%;
     }
+    .modal-title {
+        font-size: 2.5rem;
+    }
+    div#description {
+        font-size: 1.5rem;
 }

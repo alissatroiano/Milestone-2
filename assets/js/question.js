@@ -143,7 +143,7 @@ var questions = [
     ),
 
     new Question(
-        "Which historical landmark inspired George R.R Martin to create 'The Wall'?",
+        "Which historical landmark inspired George R.R Martin to create 'The Wall?'",
         [
             "The Great Wall Of China, China",
             "Hadrian’s Wall, England",
@@ -156,7 +156,7 @@ var questions = [
     ),
 
     new Question(
-        "Which location was used to film the iconic, 'King's Landing' for the television series, Game Of Thrones?",
+        "What real horse-riding clans were, 'The Dothraki' based on?",
         [
             "Crete, Greece",
             "Vis, Croatia",
@@ -164,7 +164,7 @@ var questions = [
         ],
         "Dubrovnik, Croatia",
         "ENTER NEW TEXT HERE",
-        "https://media.giphy.com/media/aARbAkgq690xG/giphy.gif"
+        "https://media.giphy.com/media/n7mCp09VYDrsA/giphy.gif"
     ),
 
     new Question(

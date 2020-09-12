@@ -168,15 +168,15 @@ var questions = [
     ),
 
     new Question(
-        "Which King's death inspired King Jeoffrey Baratheon's deadly, 'Purple Wedding'?",
+        "Who was Jeoffrey Baratheon and the, 'Purple Wedding' inspired by?",
         [
             "Henry VII of Luxembourg, the Holy Roman Emperor",
             "King Charles I of England",
             "Eustace IV, Count of Boulogne"
         ],
         "Eustace IV, Count of Boulogne",
-        "Author, George R.R. Martin, has revealed that the inspiration for the Purple Wedding came from the death of Eustace IV, Count of Boulogne. <br>King Stephen of England, Eustace's father, had usurped the crown from his cousin, Empress Matilda, leading to the Anarchy.",
-        "https://media.giphy.com/media/Az8qq276ke2BO/giphy.gif"
+        "The inspiration for Jeoffrey's cruel nature and his catastrophic wedding event actually came from the death of Eustace IV, Count of Boulogne.",
+        "https://media.giphy.com/media/3o6ozjzLLCjc4AoBEY/giphy.gif"
     ),
 
     new Question(

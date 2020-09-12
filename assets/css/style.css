@@ -241,8 +241,7 @@ img {
         color: #fafafa;
         font-size: 1rem;
         text-align: center;
-        margin-top: 40px;
-        padding-bottom: 20px;
+        margin-top: 10rem;
     }
     button#btn0, button#btn1, button#btn2, button#btn3 {
         background-color: #0a0b0c;
@@ -266,4 +265,5 @@ img {
     }
     div#description {
         font-size: 1.2rem;
+    }
 }

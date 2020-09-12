@@ -21,7 +21,7 @@ Quiz.prototype.guess = function (answer) {
 Quiz.prototype.answerModal = function (questionIndex) {
     $(".modal-title").text(questions[questionIndex].answer);
     $("#description").html(questions[questionIndex].description);
-    $("#image").attr("src", questions[questionIndex].image);
+    $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
     $(".modal-footer").text(questions[questionIndex].footer);
     $("#modal").modal("show");
 };
@@ -55,7 +55,8 @@ function play() {
         // show options
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
-            var element = document.getElementById("choice" + i);
+            element = document.getElementById("choice" + i);
+            console.log(element)
             element.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
@@ -65,7 +66,6 @@ function play() {
 
 // This function creates the submit onclick event while populating the score
 function guess(id, guess) {
-    console.log(id, guess);
     var button = document.getElementById(id);
     button.onclick = function () {
         quiz.guess(guess);
@@ -147,8 +147,7 @@ var questions = [
         [
             "The Great Wall Of China, China",
             "Hadrian’s Wall, England",
-            "Wall of Babylon, Iraq",
-            "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
+            "Wall of Babylon, Iraq"
         ],
         "Hadrian’s Wall, England",
         "In, 'Game of Thrones', 'The Wall' has been, 'guarding the realms of men for centuries'. <br> In 122 AD Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
@@ -175,7 +174,7 @@ var questions = [
             "Eustace IV, Count of Boulogne"
         ],
         "Eustace IV, Count of Boulogne",
-        "The inspiration for Jeoffrey's cruel nature and his catastrophic wedding event actually came from the death of Eustace IV, Count of Boulogne.",
+        "The inspiration for Jeoffrey's cruel nature and his catastrophic wedding event actually came from the death of King Eustace IV, Count of Boulogne who, much like Jeoffrey, had a very dark side. There are various accounts of his death, though most believe he was poisoned.",
         "https://media.giphy.com/media/3o6ozjzLLCjc4AoBEY/giphy.gif"
     ),
 

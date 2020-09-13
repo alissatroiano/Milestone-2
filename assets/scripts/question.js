@@ -59,6 +59,10 @@ Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 };
 
+function quizTest() {
+    return Quiz;
+}
+
 function play() {
     if (quiz.isEnded()) {
         showScores();
@@ -82,7 +86,7 @@ function play() {
 // This function creates the submit onclick event while populating the score
 function guess(id, guess) {
     var button = document.getElementById(id);
-    button.onclick = function () {
+    $(button).onclick = function () {
         quiz.guess(guess);
         play();
     };

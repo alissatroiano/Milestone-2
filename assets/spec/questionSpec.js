@@ -23,4 +23,9 @@ describe("Quiz", function () {
             expect(myIndex()).toBe("Error!")
         });
     });
+    describe("quizTest test", function() {
+        it("Should return all quiz contents", function() {
+            expect(quizTest()).toBe(Quiz)
+        })
+    })
 });

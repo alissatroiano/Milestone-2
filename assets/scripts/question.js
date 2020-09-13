@@ -7,8 +7,12 @@ function Quiz(questions) {
 }
 
 function myScore() {
-    return 1;
-}
+    return 0;
+} 
+
+function myQuestions() {
+    return questions;
+} 
 
 Quiz.prototype.getQuestionIndex = function () {
     return this.questions[this.questionIndex];

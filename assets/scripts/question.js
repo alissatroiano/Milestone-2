@@ -7,7 +7,7 @@ function Quiz(questions) {
 }
 
 function myScore() {
-    return 0;
+    return 1;
 }
 
 Quiz.prototype.getQuestionIndex = function () {

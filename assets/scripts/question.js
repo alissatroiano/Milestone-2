@@ -18,6 +18,14 @@ Quiz.prototype.getQuestionIndex = function () {
     return this.questions[this.questionIndex];
 };
 
+function myIndex(number) {
+    if(typeof(number) === "number")
+    return true;
+    else {
+        return "Error!";
+    }
+}
+
 Quiz.prototype.guess = function (answer) {
     this.answerModal(this.questionIndex);
     if (this.getQuestionIndex().isCorrectAnswer(answer)) {

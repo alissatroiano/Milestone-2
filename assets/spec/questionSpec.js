@@ -5,11 +5,8 @@ describe("Quiz", function () {
         });
 
         it("Should trigger questions", function() {
-            expect(myQuestion()).toBe(questions);
+            expect(myQuestions()).toBe(questions);
         });
-
-        
-
     });
 });
       

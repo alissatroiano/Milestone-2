@@ -6,12 +6,11 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
 
-
 function myScore() {
     return 0;
 } 
 
-function myQuestion() {
+function myQuestions() {
     return questions;
 } 
 

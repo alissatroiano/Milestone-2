@@ -6,25 +6,9 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
 
-function myScore() {
-    return 0;
-} 
-
-function myQuestions() {
-    return questions;
-} 
-
 Quiz.prototype.getQuestionIndex = function () {
     return this.questions[this.questionIndex];
 };
-
-function myIndex(number) {
-    if(typeof(number) === "number")
-    return true;
-    else {
-        return "Error!";
-    }
-}
 
 Quiz.prototype.guess = function (answer) {
     this.answerModal(this.questionIndex);
@@ -58,10 +42,6 @@ function Question(text, choices, answer, description, image, footer) {
 Question.prototype.isCorrectAnswer = function (choice) {
     return this.answer === choice;
 };
-
-function quizTest() {
-    return Quiz;
-}
 
 function play() {
     if (quiz.isEnded()) {
@@ -108,10 +88,6 @@ function showScores() {
     $("#modal").hide();
     $("div.answer-column").hide();
     $("div.quiz-column").css("width", "100vw");
-}
-
-function scoresTest() {
-    return typeof(showScores());
 }
 
 // The questions array is defined here

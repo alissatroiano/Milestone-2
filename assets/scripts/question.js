@@ -6,6 +6,10 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
 
+function myScore() {
+    return 0;
+}
+
 Quiz.prototype.getQuestionIndex = function () {
     return this.questions[this.questionIndex];
 };

@@ -26,6 +26,11 @@ describe("Quiz", function () {
     describe("quizTest test", function() {
         it("Should return all quiz contents", function() {
             expect(quizTest()).toBe(Quiz)
+        });
+    });
+    describe("scoresTest function test", function() {
+        it("Should return an error if not a function", function() {
+            expect(scoresTest(10)).toBe("Error!")
         })
-    })
+    });
 });

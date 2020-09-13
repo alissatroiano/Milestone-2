@@ -110,6 +110,10 @@ function showScores() {
     $("div.quiz-column").css("width", "100vw");
 }
 
+function scoresTest() {
+    return typeof(showScores());
+}
+
 // The questions array is defined here
 var questions = [
     new Question(

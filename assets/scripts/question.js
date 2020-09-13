@@ -56,6 +56,7 @@ function play() {
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
             element = document.getElementById("choice" + i);
+            console.log(element)
             element.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
@@ -66,7 +67,7 @@ function play() {
 // This function creates the submit onclick event while populating the score
 function guess(id, guess) {
     var button = document.getElementById(id);
-    $(button).onclick = function () {
+    button.onclick = function () {
         quiz.guess(guess);
         play();
     };

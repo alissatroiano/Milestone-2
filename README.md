@@ -139,11 +139,17 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 * The modal dialog box used to display the correct question answers, GIF images and descriptions was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
 
+* The modal dialog box used to display the directions for the game was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
+
+* The branded navbar with toggle expand was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/navbar/).
+
 * The GIF images used in each modal dialog box were copied from [GIPHY](https://giphy.com/).
 
 * The media queries in the stylesheet were copied/learned from [w3schools.com](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
 * Line 2 of question.js, which enables `jQuery.noConflict())` mode was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
+
+* The classes used to style the game's grid and buttons were also copied from [Bootstrap](https://getbootstrap.com).
 
 ### Media
 

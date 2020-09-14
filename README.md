@@ -45,7 +45,11 @@ This document can be viewed [here](assets/images/userstories.jpg)
 
 * [JavaScript](https://www.javascript.com/)
 
+* [Jasmine](https://jasmine.github.io/)
+
 ## Testing
+
+Thorough testing was conducted to remove bugs from this project. To read a full write-up of the testing process, please refer to [TESTING](TESTING.MD).
 
 ## Deployment
 
@@ -75,6 +79,8 @@ This document can be viewed [here](assets/images/userstories.jpg)
 
 * The media queries in the stylesheet were copied/learned from [w3schools.com](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
+* Line 2 of question.js (jQuery.noConflict()) was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
+
 ### Media
 
 * The background image of the iron throne used in the jumbotron section was taken by [Corona Borealis Studio](https://www.shutterstock.com/g/automotive+stocks) and downloaded/licensed via [Shutterstock](https://www.shutterstock.com/image-illustration/medieval-iron-throne-kings-made-weapons-1403641736).
@@ -86,3 +92,5 @@ This document can be viewed [here](assets/images/userstories.jpg)
 * [Quackit.com](https://www.quackit.com) for providing this informative article titled, ['HTML audio tag'](https://www.quackit.com/html/tags/html_audio_tag.cfm).
 
 * The markdown used to create this README.md document was learned from [commonmark.org](https://commonmark.org).
+
+* Acknowledgments go to [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) for providing learnable information about inheritance and the prototype chain, which were used to help me gain a more thorough understanding of this concept.

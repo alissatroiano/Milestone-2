@@ -1,7 +1,7 @@
 
 # A Quiz Of Ice and Fire
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program, A Quiz Of Ice and Fire is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience. 
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program, A Quiz Of Ice and Fire is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
 
 ## UX
 
@@ -9,29 +9,62 @@ The primary goals of, 'A Quiz Of Ice and Fire' are:
 
 * Create an interactive trivia game that is both informative and fun.
 
-* Present historical information in a learnable and fun matter.
+* Present historical/factual information in a fun and teachable way.
 
 A Quiz Of Ice and Fire's target market is comprised of:
 
-* Men & women (ages 18-29) that enjoy historical trivia and are fans of the book series, 'A Song Of Ice and Fire' by George R.R. Martin.
-
-* Men & women (ages 18-29) that work as educators and want to incorporate pop culture into their history lessons.
+* Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'A Game Of Thrones'.
 
 NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.
 
-## UX
-
-User Stories were cretaed during the development phase of this project.
+User Stories were cretaed during the development phase of this project to help the developer begin the wireframe process.
 
 ![assets/images/userstories.jpg](assets/images/userstories.jpg)
 
 This document can be viewed [here](assets/images/userstories.jpg)
 
+To determine what features were the most important and most viable, the following Strategy Plane activity was completed during the planning phase of this project.
+
+![Trade Off Table Goes Here]()
+
+Once the strategy exercises were completed, the following low-fidelity wireframes were created by the [developer](https://www.github.com/alissatroiano).
+
 ### Features
+
+* How To Play:
+
+The 'How To Play' section allows users to read about the game before they get started by opening a modal with directions.
+
+* Quiz:
+
+* The quiz section provides questions with multiple choices for users to read and answer by clicking on their best guess and triggering a modal to open.
+
+* Explanation Modal
+
+* Upon clicking their best guess, this feature allows the user to find out if they were right and to learn some cool new information by displaying the correct answer, its' description and a GIF image in a modal dialog.
+
+* Progress
+
+* The progress section allows the user to see what number question they are currently on and how many questions they have left, by loading in an extternal JavaScript file and incremented the progress # by 1 each time the user moves on to a new question.
+
+* Results
+
+* The results section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
 
 #### Existing Features
 
+* How To Play
+* Quiz
+* Explanation Modal
+* Progress
+* Results
+
 #### Features Left to Implement
+
+* Google Maps API Integration
+* Interactive response to final score
+
+## UX Design
 
 ## Technologies
 

@@ -1,4 +1,5 @@
-// Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project
+/* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
+var $ = jQuery.noConflict();
 
 function Quiz(questions) {
     this.score = 0;
@@ -56,7 +57,6 @@ function play() {
         var choices = quiz.getQuestionIndex().choices;
         for (var i = 0; i < choices.length; i++) {
             element = document.getElementById("choice" + i);
-            console.log(element)
             element.innerHTML = choices[i];
             guess("btn" + i, choices[i]);
         }
@@ -88,7 +88,7 @@ function showScores() {
     element.innerHTML = gameOverHTML;
     $("#modal").hide();
     $("div.answer-column").hide();
-    $("div.quiz-column").css("width", "100vw");
+    $("div.quiz-column").css({"height": "100vh", "width": "100vw"});
 }
 
 // The questions array is defined here

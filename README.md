@@ -1,7 +1,8 @@
-
 # Game Of Facts
 
 As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
+
+![responsive-view](wireframes/amiresponsive.png)
 
 ## UX
 
@@ -13,21 +14,25 @@ The primary goals of, ' Game Of Facts' are:
 
  Game Of Facts's target market is comprised of:
 
-* Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'A Game Of Thrones'.
+* Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
 
-NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.
+***NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.***
 
 User Stories were cretaed during the development phase of this project to help the developer begin the wireframe process.
 
-![assets/images/userstories.jpg](assets/wireframes/userstories.jpg)
+![assets/images/userstories.jpg](wireframes/userstories.jpg)
 
-This document can be viewed [here](assets/wireframes/userstories.jpg)
+This document can be viewed [here](wireframes/userstories.jpg)
 
 To determine what features were the most important and most viable, the following Strategy Plane activity was completed during the planning phase of this project.
 
-![Trade Off Table Goes Here]()
+![Strategy Table](wireframes/strategytable.png)
 
-Once the strategy exercises were completed, the following low-fidelity wireframes were created by the [developer](https://www.github.com/alissatroiano).
+![Trade Off Table](wireframes/tradeofftable.png)
+
+The Trade-off Table exercise can be viewed [here](wireframes/strategy.pdf).
+
+Once the strategy exercises were completed, the following wireframes were created by the [developer](https://www.github.com/alissatroiano) to guide the development process.
 
 ### Features
 
@@ -128,10 +133,10 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 * The information about real historical events that inspired Game Of Thrones from the quiz portion of this project was copied from:
 
     1. [BBC.com](https://www.bbc.co.uk/programmes/articles/4RVybvDdJMq7fjRp5450yX1/the-real-historical-events-that-inspired-game-of-thrones) - to research real events that inspired Game of Thrones.
-    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research valid history behind Game of Thrones.s
-    3. [The Week](https://theweek.com/articles/463588/fromreallife-events-that-inspired-game-thrones-red-wedding) was used to obtain information about Scotland's historical Black Dinner of 1440.
-    4. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
-    5. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
+    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research valid history behind Game of Thrones.
+    3. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
+    4. [The Week](https://theweek.com/articles/463588/fromreallife-events-that-inspired-game-thrones-red-wedding) was used to obtain information about Scotland's historical Black Dinner of 1440.
+    5. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
 
 ### Code
 

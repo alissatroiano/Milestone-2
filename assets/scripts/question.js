@@ -18,12 +18,12 @@ Quiz.prototype.guess = function (answer) {
 };
 
 Quiz.prototype.answerModal = function (questionIndex) {
-    $(".modal-title").text(questions[questionIndex].answer);
-    $("#description").html(questions[questionIndex].description);
-    $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
-    $(".modal-footer").text(questions[questionIndex].footer);
-    $("#modal").modal("show");
-};
+        $(".modal-title").text(questions[questionIndex].answer);
+        $("#description").html(questions[questionIndex].description);
+        $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
+        $(".modal-footer").text(questions[questionIndex].footer);
+        $("#modal").modal("show");
+    };
 
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
@@ -87,7 +87,7 @@ function showScores() {
     element.innerHTML = gameOverHTML;
     $("#modal").hide();
     $("div.answer-column").hide();
-    $("div.quiz-column").css({"height": "100vh", "width": "100vw"});
+    $("div.quiz-column").css({"height": "100vh"});
 }
 
 // The questions array is defined here

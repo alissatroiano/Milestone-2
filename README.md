@@ -1,17 +1,17 @@
 
-# A Quiz Of Ice and Fire
+# Game Of Facts
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program, A Quiz Of Ice and Fire is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
 
 ## UX
 
-The primary goals of, 'A Quiz Of Ice and Fire' are:
+The primary goals of, ' Game Of Facts' are:
 
 * Create an interactive trivia game that is both informative and fun.
 
 * Present historical/factual information in a fun and teachable way.
 
-A Quiz Of Ice and Fire's target market is comprised of:
+ Game Of Facts's target market is comprised of:
 
 * Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'A Game Of Thrones'.
 
@@ -19,9 +19,9 @@ NOTE: This game should not be played by anybody who has not finished the televis
 
 User Stories were cretaed during the development phase of this project to help the developer begin the wireframe process.
 
-![assets/images/userstories.jpg](assets/images/userstories.jpg)
+![assets/images/userstories.jpg](assets/wireframes/userstories.jpg)
 
-This document can be viewed [here](assets/images/userstories.jpg)
+This document can be viewed [here](assets/wireframes/userstories.jpg)
 
 To determine what features were the most important and most viable, the following Strategy Plane activity was completed during the planning phase of this project.
 
@@ -66,17 +66,50 @@ The 'How To Play' section allows users to read about the game before they get st
 
 ## UX Design
 
+### Typography
+
+The fonts selected for Game Of Facts were:
+
+1. Trajan-Pro-3, serif
+2. Futura PT, sans-serif
+
+The developer selected these fonts because:
+
+* Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This text was used for titles, questions, branded navigation and other text that the developer wanted to stand-out.
+
+* Futura PT is a popular, clean and modern sans-serif font. This font was chosen for answer explanations, multiple choices, navigation links and other body text to compliment the Trajan-Pro-3, serif font.
+
+* When it comes to typography, serif and sans-serif fonts pair together nicely, creating a modern and clean aesthetic that will appear to the project's target market.
+
 ## Technologies
 
 * [HTML](https://html.com/)
 
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
-* [Bootstrap](https://getbootstrap.com/)
+* [JavaScript](https://www.javascript.com/)
 
 * [jQuery](https://jquery.com/)
 
-* [JavaScript](https://www.javascript.com/)
+* [Bootstrap](https://getbootstrap.com/)
+
+* [GitHub/GitHub Pages](https://github.com/)
+
+* [Git](https://git-scm.com/)
+
+* [GitPod](https://gitpod.io/)
+
+* [JSHint](https://JSHint.com)
+
+* [CSS Autoprefixer](https://autoprefixer.github.io)
+
+* [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+
+* [W3C HTML Validator](https://validator.w3.org/)
+
+* [Popper.js](https://popper.js.org/)
+
+* [Balsamiq](https://balsamiq.com/)
 
 * [Jasmine](https://jasmine.github.io/)
 

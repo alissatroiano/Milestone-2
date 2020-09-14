@@ -121,7 +121,7 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 ## Credits
 
-### Content
+### Content and Research
 
 * The target market research and demographic data used to create User Stories, Wireframes and to pitch this project in README.md was obtained from [Wired.com](https://www.wired.com/2013/06/women-game-of-thrones/), [BusinessInsider.com](https://www.businessinsider.com/game-of-thrones-compared-to-most-popular-tv-shows-of-2018-ratings-2019-4?op=1#2-the-big-bang-theory-cbs-9), [WinterIsComing.net](https://winteriscoming.net/2017/01/16/results-song-of-ice-and-fire-game-of-thrones-demographic-survey/) and [Statista.com](https://www.statista.com/search/?q=A+Game+of+Thrones&qKat=newSearchFilter&sortMethod=idrelevance&isRegionPref=840&sortMethodMobile=idrelevance&statistics=1&dossiers=1&groupA=1&xmo=1&surveys=1&toplists=1&accuracy=and&region%5B%5D=3&isoregion=3&isocountrySearch=&category=0&interval=0&archive=1).
 
@@ -133,11 +133,9 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
     4. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
     5. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
 
-* The functions used to create the quiz for this project were copied from/learned by following the, 'How to Make a Simple JavaScript Quiz,' tutorial on [Sitepoint.com](https://www.sitepoint.com/simple-javascript-quiz/) and adjusted for this project.
+### Code
 
-* The code used to embed, hide and autoplay background music was copied from [Quackit.com article, 'HTML Background Music Code'](https://www.quackit.com/html/codes/html_background_music_codes.cfm).
-
-* The styles and functions used to create the receding modal dialog box were aquired from [CSS Tricks](https://css-tricks.com/receding-background-modal-boxes/).
+* The functions used to create the quiz for this project were copied from/learned by following the, 'How to Create JS Quiz App,' tutorial on [Webdevtrick.com](https://webdevtrick.com/create-javascript-quiz-program/) and adjusted by the developer.
 
 * The modal dialog box used to display the correct question answers, GIF images and descriptions was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
 
@@ -145,11 +143,11 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 * The media queries in the stylesheet were copied/learned from [w3schools.com](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
-* Line 2 of question.js (jQuery.noConflict()) was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
+* Line 2 of question.js, which enables `jQuery.noConflict())` mode was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
 
 ### Media
 
-* The background image of the iron throne used in the jumbotron section was taken by [Corona Borealis Studio](https://www.shutterstock.com/g/automotive+stocks) and downloaded/licensed via [Shutterstock](https://www.shutterstock.com/image-illustration/medieval-iron-throne-kings-made-weapons-1403641736).
+* The background image of the iron throne used in the jumbotron section was downloaded/licensed via [Shutterstock](https://www.shutterstock.com/image-illustration/medieval-iron-throne-kings-made-weapons-1403501564).
 
 ### Acknowledgements
 
@@ -159,4 +157,4 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 * The markdown used to create this README.md document was learned from [commonmark.org](https://commonmark.org).
 
-* Acknowledgments go to [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) for providing learnable information about inheritance and the prototype chain, which were used to help me gain a more thorough understanding of this concept.
+* Acknowledgments go to [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) for providing learnable information about inheritance and the **prototype** chain, which were used to help me gain a more thorough understanding of prototyping in JavaScript.

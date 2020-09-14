@@ -1,6 +1,4 @@
 /* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
-var $ = jQuery.noConflict();
-
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
@@ -73,7 +71,8 @@ function guess(id, guess) {
     };
 }
 
-// The showProgress function shows the user what question they are currently answering out of the total number of questions in the game  
+/* The showProgress function shows the user what question they are currently answering 
+out of the total number of questions in the game */
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");

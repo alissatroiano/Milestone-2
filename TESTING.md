@@ -19,10 +19,10 @@ The following tests have been conducted by the developer. Each test described be
 ## Console Tests
 
 1. Test 1 - Console:
-    * Add a line of cod
+    * Add a line of code
     * Open Chrome Developer Tools and visit the console
-    * Identify a 'TypeError' on line 58.
-    * Inspect code and repair error.
+    * Identify a 'TypeError' on line 58
+    * Inspect code and repair error
     * Declared test, ‘passed’
 
 2. Console Test 2 - Quiz Test
@@ -51,3 +51,7 @@ The following tests have been conducted by the developer. Each test described be
     * Refresh browser and open Chrome Dev Tools Console
     * Type showProgress and showScores to ensure error warning is now eliminated
     * Declared test, ‘passed’
+
+## Test Driven Development with Jasmine
+
+1. Jasmine Test 1 - The Quiz Test

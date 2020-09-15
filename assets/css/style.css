@@ -3,7 +3,7 @@
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url('../images/cover.jpg') no-repeat, center, center, fixed;
+            rgba(0, 0, 0, 0.7)), url('../images/cover.jpg') no-repeat, center, center, fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -15,7 +15,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
- }
+}
 
 /*-------------------------- Ttles, subtitles and special text */
 
@@ -100,8 +100,11 @@ span {
     letter-spacing: 1px;
     font-size: 1.158rem;
 }
- 
-button#btn0, button#btn1, button#btn2, button#btn3 {
+
+button#btn0,
+button#btn1,
+button#btn2,
+button#btn3 {
     background-color: #000;
     width: 250px;
     font-size: 1.1rem;
@@ -110,13 +113,19 @@ button#btn0, button#btn1, button#btn2, button#btn3 {
     padding: 20px 20px;
     border: 1px solid #000;
 }
- 
-button#btn0:hover, button#btn1:hover, button#btn2:hover, button#btn3:hover {
+
+button#btn0:hover,
+button#btn1:hover,
+button#btn2:hover,
+button#btn3:hover {
     cursor: pointer;
     background-color: #b00d0d;
 }
- 
-button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
+
+button#btn0:focus,
+button#btn1:focus,
+button#btn2:focus,
+button#btn3:focus {
     outline: 0;
 }
 
@@ -145,13 +154,13 @@ button#btn0:focus, button#btn1:focus, button#btn2:focus, button#btn3:focus {
 }
 
 .modal-footer {
-     color: #fafafa;
-     font-family: 'Trajan-Pro-3',
-     serif;
-     text-align: center;
-     border: none;
-     background-color: #0a0b0c;
-     padding-bottom: 40px;
+    color: #fafafa;
+    font-family: 'Trajan-Pro-3',
+        serif;
+    text-align: center;
+    border: none;
+    background-color: #0a0b0c;
+    padding-bottom: 40px;
 }
 
 div#description {
@@ -207,7 +216,8 @@ img {
     .quiz-column {
         text-align: center;
         height: 100vh;
-    } 
+    }
+
     #question {
         font-size: 25px;
         color: #fafafa;
@@ -217,26 +227,33 @@ img {
         padding-bottom: 20px;
         margin: 0px 80px;
     }
+
     .buttons {
         margin-top: 150px;
         padding: 60px 20px;
         text-align: center;
         vertical-align: middle;
         display: inline-grid;
-    } 
+    }
+
     .answer-column {
         height: 100vh;
         font-family: 'Futura-PT', sans-serif;
         background-color: rgba(94, 8, 8, .6);
         text-align: center;
     }
+
     #progress {
         color: #fafafa;
         font-size: 1rem;
         text-align: center;
         margin-top: 10rem;
     }
-    button#btn0, button#btn1, button#btn2, button#btn3 {
+
+    button#btn0,
+    button#btn1,
+    button#btn2,
+    button#btn3 {
         background-color: #0a0b0c;
         font-size: 1.5rem;
         color: #fff;
@@ -244,18 +261,23 @@ img {
         padding: 20px 20px;
         border: none;
     }
+
     h1 {
         padding-top: 15rem;
     }
+
     .modal-open {
         overflow: visible;
     }
+
     .modal-full {
         max-width: 50%;
     }
+
     .modal-title {
         font-size: 2rem;
     }
+
     div#description {
         font-size: 1.2rem;
     }

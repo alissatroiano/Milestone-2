@@ -1,14 +1,12 @@
 /*-------------------------- Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-* {
-    box-sizing: border-box;
-}
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
+        rgba(0, 0, 0, 0.7)), url('../images/cover.jpg') no-repeat, center, center, fixed;
     background-size: cover;
     background-position: center;
+    height: 100vh;
     margin: 0 auto;
     font-size: 16px;
 }

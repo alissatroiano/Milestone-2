@@ -1,6 +1,6 @@
 # Game Of Facts
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of global history and for fans of the popular book series, 'A Song Of Ice and Fire'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of world/global history and fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
 
 ![responsive-view](wireframes/amiresponsive.png)
 
@@ -16,6 +16,8 @@ The primary goals of, ' Game Of Facts' are:
 
 * Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
 
+* Educators of world/global history that want to incorporate pop-culture and fun into their lessons.
+
 ***NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.***
 
 User Stories were cretaed during the development phase of this project to help the developer begin the wireframe process.
@@ -24,15 +26,23 @@ User Stories were cretaed during the development phase of this project to help t
 
 This document can be viewed [here](wireframes/userstories.jpg)
 
-To determine what features were the most important and most viable, the following Strategy Plane activity was completed during the planning phase of this project.
+This Strategy Plane activity was conducted to determine which features were the most important and most viable.
 
 ![Strategy Table](wireframes/strategytable.png)
 
 ![Trade Off Table](wireframes/tradeofftable.png)
 
-The Trade-off Table exercise can be viewed [here](wireframes/strategy.pdf).
+Before completing this exercise, I had originally planned on calling the Google ,Maps Api to generate a map with Google Street View so quiz users could see the sites where the historical content from the game took place. However, after completing this exercise and speaking with my mentor, that feature was dropped due to minimal importance and, most significantly, viability.
+
+The Trade-off Table exercise can be viewed in its' entirety [here](wireframes/strategy.pdf).
 
 Once the strategy exercises were completed, the following wireframes were created by the [developer](https://www.github.com/alissatroiano) to guide the development process.
+
+![Desktop](wireframes/desktop.png)
+
+![Desktop](wireframes/tablet.png)
+
+![Desktop](wireframes/mobile.png)
 
 ### Features
 
@@ -50,7 +60,7 @@ The 'How To Play' section allows users to read about the game before they get st
 
 * Progress
 
-* The progress section allows the user to see what number question they are currently on and how many questions they have left, by loading in an extternal JavaScript file and incremented the progress # by 1 each time the user moves on to a new question.
+* The progress section allows the user to see what number question they are currently on and how many questions they have left, by loading in an external JavaScript file and incremented the progress # by 1 each time the user moves on to a new question.
 
 * Results
 

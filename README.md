@@ -14,7 +14,7 @@ The primary goals of, ' Game Of Facts' are:
 
  Game Of Facts's target market is comprised of:
 
-* Men & women (ages 18-29) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
+* Men & women (ages 18-34) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
 
 * Educators of world/global history that want to incorporate pop-culture and fun into their lessons.
 
@@ -46,55 +46,40 @@ Once the strategy exercises were completed, the following wireframes were create
 
 ### Features
 
-* How To Play:
+* **How To Play:** The 'How To Play' section allows users to read about the game before they get started by opening a modal with directions.
 
-The 'How To Play' section allows users to read about the game before they get started by opening a modal with directions.
+* **Quiz Questions:** The quiz section provides questions with multiple choices for users to read and answer by clicking on their best guess and triggering a modal to open.
 
-* Quiz:
+* **Multiple Choices:** Displayed in the right-hand column, this features allows the user to view the multiple choice answers and click on their desired choice so they can find out if they were right or wrong.
 
-* The quiz section provides questions with multiple choices for users to read and answer by clicking on their best guess and triggering a modal to open.
+* **Progress:** The progress feature allows the user to see their progress in the game by dislaying the number of the question they are currently working on out of the total number of questions in the game.
 
-* Explanation Modal
-
-* Upon clicking their best guess, this feature allows the user to find out if they were right and to learn some cool new information by displaying the correct answer, its' description and a GIF image in a modal dialog.
-
-* Progress
-
-* The progress section allows the user to see what number question they are currently on and how many questions they have left, by loading in an external JavaScript file and incremented the progress # by 1 each time the user moves on to a new question.
-
-* Results
-
-* The results section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
+* **Final Score:** The results section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
 
 #### Existing Features
 
 * How To Play
-* Quiz
-* Explanation Modal
+* Quiz Questions
+* Multiple Choices
 * Progress
-* Results
+* Final Score
 
 #### Features Left to Implement
-
-* Google Maps API Integration
-* Interactive response to final score
 
 ## UX Design
 
 ### Typography
 
-The fonts selected for Game Of Facts were:
+The fonts selected for this project were:
 
 1. Trajan-Pro-3, serif
 2. Futura PT, sans-serif
 
 The developer selected these fonts because:
 
-* Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This text was used for titles, questions, branded navigation and other text that the developer wanted to stand-out.
+* Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This font was selected and used to style page titles, questions, progress, final score and the the game logo.
 
-* Futura PT is a popular, clean and modern sans-serif font. This font was chosen for answer explanations, multiple choices, navigation links and other body text to compliment the Trajan-Pro-3, serif font.
-
-* When it comes to typography, serif and sans-serif fonts pair together nicely, creating a modern and clean aesthetic that will appear to the project's target market.
+* Futura PT is a clean and modern sans-serif font that is recognizable and appealing to the project's target market. This font was chosen for answer explanations, multiple choices, navigation links and other body text to compliment the Trajan-Pro-3, serif font.
 
 ## Technologies
 

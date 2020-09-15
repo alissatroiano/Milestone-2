@@ -147,6 +147,7 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
     3. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
     4. [The Week](https://theweek.com/articles/463588/fromreallife-events-that-inspired-game-thrones-red-wedding) was used to obtain information about Scotland's historical Black Dinner of 1440.
     5. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
+    6. [Fandom](https://gameofthrones.fandom.com/wiki/Ironborn) - the quiz answer about the Ironborn and Vikings was copied and pasted from this article.
 
 ### Code
 

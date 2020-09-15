@@ -32,17 +32,17 @@ This Strategy Plane activity was conducted to determine which features were the 
 
 ![Trade Off Table](wireframes/tradeofftable.png)
 
-Before completing this exercise, I had originally planned on calling the Google ,Maps Api to generate a map with Google Street View so quiz users could see the sites where the historical content from the game took place. However, after completing this exercise and speaking with my mentor, that feature was dropped due to minimal importance and, most significantly, viability.
-
 The Trade-off Table exercise can be viewed in its' entirety [here](wireframes/strategy.pdf).
 
 Once the strategy exercises were completed, the following wireframes were created by the [developer](https://www.github.com/alissatroiano) to guide the development process.
 
 ![Desktop](wireframes/desktop.png)
 
-![Desktop](wireframes/tablet.png)
+![Tablet](wireframes/tablet.png)
 
-![Desktop](wireframes/mobile.png)
+![Mobile](wireframes/mobile.png)
+
+These wireframes were created with [Balsamiq](https://balsamiq.com/) wireframing software and can be viewed [here](wireframes/wireframes.pdf).
 
 ### Features
 
@@ -54,7 +54,7 @@ Once the strategy exercises were completed, the following wireframes were create
 
 * **Progress:** The progress feature allows the user to see their progress in the game by dislaying the number of the question they are currently working on out of the total number of questions in the game.
 
-* **Final Score:** The results section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
+* **Final Score:** The final score section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
 
 #### Existing Features
 
@@ -63,8 +63,6 @@ Once the strategy exercises were completed, the following wireframes were create
 * Multiple Choices
 * Progress
 * Final Score
-
-#### Features Left to Implement
 
 ## UX Design
 
@@ -80,6 +78,12 @@ The developer selected these fonts because:
 * Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This font was selected and used to style page titles, questions, progress, final score and the the game logo.
 
 * Futura PT is a clean and modern sans-serif font that is recognizable and appealing to the project's target market. This font was chosen for answer explanations, multiple choices, navigation links and other body text to compliment the Trajan-Pro-3, serif font.
+
+## Color Palette
+
+The following color palette was chosen by the [developer](https://github.com/alissatroiano) for this project:
+
+![Color Palette](wireframes/colorpalette.jpg)
 
 ## Technologies
 

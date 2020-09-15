@@ -94,9 +94,9 @@ var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",
         [
-            "Windsor Castle, Windsor",
-            "Kilkenny Castle, Ireland",
-            "Doune Castle, Scotland"
+            "Windsor Castle",
+            "Kilkenny Castle",
+            "Doune Castle"
         ],
         "Doune Castle",
         "In the first few episodes of Game of Thrones, the Winterfell scenes were filmed at Doune Castle in Scotland, which was originally built in the 13th century as a medieval stronghold",

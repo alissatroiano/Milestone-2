@@ -87,9 +87,8 @@ function showScores() {
     element.innerHTML = gameOverHTML;
     $("#modal").hide();
     $("div.answer-column").hide();
-    $("div.col-md-6.flex-column").removeClass("col-md-6").addClass("col-12");
-    $("div#results").css({"width": "500px", "height": "500px"});
-
+    $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
+    $("div#results").css({"width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0"});
 }
 
 // The questions array is defined here

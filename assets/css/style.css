@@ -105,7 +105,7 @@ div.answer-column {
 }
 
 .buttons {
-    font-weight: 300px;
+    font-weight: 300;
     padding: 60px 30px;
     text-align: center;
     vertical-align: middle;
@@ -161,7 +161,6 @@ button#btn3:focus {
     color: #fafafa;
     font-family: 'Trajan-Pro-3', serif;
     padding-top: 20px;
-    border-color: none;
     border: none;
 }
 

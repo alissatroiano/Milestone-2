@@ -1,6 +1,6 @@
 # Game Of Facts
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of world/global history and fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'. This project was built with HTML, CSS, Bootstrap 4, JavaScript and jQuery to produce an educational and interactive experience.
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of global history and fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'. This project was built with HTML, CSS, Bootstrap 4, JavaScript, and jQuery to produce an educational and interactive experience.
 
 ![responsive-view](wireframes/amiresponsive.png)
 
@@ -12,7 +12,7 @@ The primary goals of, ' Game Of Facts' are:
 
 * Present historical/factual information in a fun and teachable way.
 
- Game Of Facts's target market is comprised of:
+ Game Of Facts' target market is comprised of:
 
 * Men & women (ages 18-34) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
 
@@ -20,7 +20,7 @@ The primary goals of, ' Game Of Facts' are:
 
 ***NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.***
 
-User Stories were cretaed during the development phase of this project to help the developer begin the wireframe process.
+User Stories were created during the development phase of this project to help the developer begin the wireframe process.
 
 ![assets/images/userstories.jpg](wireframes/userstories.jpg)
 
@@ -50,9 +50,9 @@ These wireframes were created with [Balsamiq](https://balsamiq.com/) wireframing
 
 * **Quiz Questions:** The quiz section provides questions with multiple choices for users to read and answer by clicking on their best guess and triggering a modal to open.
 
-* **Multiple Choices:** Displayed in the right-hand column, this features allows the user to view the multiple choice answers and click on their desired choice so they can find out if they were right or wrong.
+* **Multiple Choices:** Displayed in the right-hand column, this feature allows the user to view the multiple-choice options and click on their desired choice so they can find out if they were right or wrong.
 
-* **Progress:** The progress feature allows the user to see their progress in the game by dislaying the number of the question they are currently working on out of the total number of questions in the game.
+* **Progress:** The progress feature allows the user to see their progress in the game by displaying the number of the question they are currently working on out of the total number of questions in the game.
 
 * **Final Score:** The final score section allows the user to see how many total questions they answered correctly, by displaying the score on the page at the end of the quiz.
 
@@ -75,9 +75,9 @@ The fonts selected for this project were:
 
 The developer selected these fonts because:
 
-* Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This font was selected and used to style page titles, questions, progress, final score and the the game logo.
+* Trajan-Pro-3 is the font used for the official Game Of Thrones logo. It is widely recognized by Game Of Thrones fans and brings the right aesthetic to this web-based trivia game. This font was selected and used to style page titles, questions, progress, final score, and the game logo.
 
-* Futura PT is a clean and modern sans-serif font that is recognizable and appealing to the project's target market. This font was chosen for answer explanations, multiple choices, navigation links and other body text to compliment the Trajan-Pro-3, serif font.
+* Futura PT is a clean and modern sans-serif font that is recognizable and appealing to the project's target market. This font was chosen for answer explanations, multiple choices, navigation links, and other body text to compliment the Trajan-Pro-3, serif font.
 
 ## Color Palette
 
@@ -123,17 +123,65 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 ## Deployment
 
+This project was deployed with [Github Pages](https://pages.github.com/). The [developer](https://github.com/alissatroiano) deployed the project successfully by following these steps:
+
+1. Created a repository on GitHub.
+1. Exported the project to Gitpod.
+1. Opened the project in Gitpod.
+1. Created index.html.
+1. Built project website.
+1. Committed and pushed all changes to Github.
+1. Imported project into GitHub Desktop and VSCode to work on Animations_Branch and experiment with new features.
+1. Committed and pushed all changes to Github.
+1. Merged Animations_Branch into master.
+1. Deleted alternate branches.
+1. Once the project was completed, I visited "repository settings" on GitHub.com.
+1. Scrolled down to the GitHub Pages section and clicked, "source".
+1. Selected the 'master' branch for deployment.
+1. Fired up a browser and went [here](https://alissatroiano.github.io/Milestone-2/) to ensure deployment was successful.
+
+### To run this project locally
+
+1. Follow [this link](https://github.com/alissatroiano/Milestone-2) to the project's GitHub Repository.
+2. In the 'Code' section to the project name and description.
+3. Click the green button labeled, 'Clone or download.'
+4. Copy the provided URL.
+5. Open Git Bash in your local Integrated Development Environment.
+6. Type the command, `git clone`.
+7. Paste [this URL](https://github.com/alissatroiano/Milestone-2.git) that was copied from GitHub earlier.
+
+**Another Option:**
+
+1. Follow [this link](https://github.com/alissatroiano/Milestone-2) to the project's GitHub Repository.
+2. In the 'Code' section scroll passed the project's name and description.
+3. Click the green button labeled, 'Clone or download.'
+4. Click, 'Download Zip'.
+5. Wait for the zip file to extract.
+6. Open the folder.
+7. Open index.html in your web browser
+
+### To run this project remotely
+
+1. Open your local IDE
+2. Type the command `git remote add origin` followed by [this URL](https://github.com/alissatroiano/Milestone-2).
+3. Run ***git remote -v***
+4. **cd** project folder
+
+You can also:
+
+* View a live version of this project [here](https://alissatroiano.github.io/Milestone-2)
+
 ## Credits
 
 ### Content and Research
 
-* The target market research and demographic data used to create User Stories, Wireframes and to pitch this project in README.md was obtained from [Wired.com](https://www.wired.com/2013/06/women-game-of-thrones/), [BusinessInsider.com](https://www.businessinsider.com/game-of-thrones-compared-to-most-popular-tv-shows-of-2018-ratings-2019-4?op=1#2-the-big-bang-theory-cbs-9), [WinterIsComing.net](https://winteriscoming.net/2017/01/16/results-song-of-ice-and-fire-game-of-thrones-demographic-survey/) and [Statista.com](https://www.statista.com/search/?q=A+Game+of+Thrones&qKat=newSearchFilter&sortMethod=idrelevance&isRegionPref=840&sortMethodMobile=idrelevance&statistics=1&dossiers=1&groupA=1&xmo=1&surveys=1&toplists=1&accuracy=and&region%5B%5D=3&isoregion=3&isocountrySearch=&category=0&interval=0&archive=1).
+* The target market research and demographic data used to create User Stories, Wireframes, and to pitch this project in README.md were obtained from [Wired.com](https://www.wired.com/2013/06/women-game-of-thrones/), [BusinessInsider.com](https://www.businessinsider.com/game-of-thrones-compared-to-most-popular-tv-shows-of-2018-ratings-2019-4?op=1#2-the-big-bang-theory-cbs-9), [WinterIsComing.net](https://winteriscoming.net/2017/01/16/results-song-of-ice-and-fire-game-of-thrones-demographic-survey/) and [Statista.com](https://www.statista.com/search/?q=A+Game+of+Thrones&qKat=newSearchFilter&sortMethod=idrelevance&isRegionPref=840&sortMethodMobile=idrelevance&statistics=1&dossiers=1&groupA=1&xmo=1&surveys=1&toplists=1&accuracy=and&region%5B%5D=3&isoregion=3&isocountrySearch=&category=0&interval=0&archive=1).
 
 * The information about real historical events that inspired Game Of Thrones from the quiz portion of this project was copied from:
 
     1. [BBC.com](https://www.bbc.co.uk/programmes/articles/4RVybvDdJMq7fjRp5450yX1/the-real-historical-events-that-inspired-game-of-thrones) - to research real events that inspired Game of Thrones.
-    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research valid history behind Game of Thrones.
-    3. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content pertaining to Game Of Thrones filming locationss
+    2. [History Behind Game Of Thrones](http://history-behind-game-of-thrones.com) - to research the real history behind Game of Thrones.
+    3. [LiveScience.com](https://www.livescience.com/59954-photos-game-of-thrones-set-locations.html) - for quiz content about Game Of Thrones filming locations
     4. [The Week](https://theweek.com/articles/463588/fromreallife-events-that-inspired-game-thrones-red-wedding) was used to obtain information about Scotland's historical Black Dinner of 1440.
     5. [Ancient.eu](https://www.ancient.eu/Battle_of_Bosworth/) and [Brittanica.com](https://www.britannica.com/event/Wars-of-the-Roses) were referenced to obtain historical information about The War Of The Roses.
     6. [Fandom](https://gameofthrones.fandom.com/wiki/Ironborn) - the quiz answer about the Ironborn and Vikings was copied and pasted from this article.
@@ -142,7 +190,7 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 
 * The functions used to create the quiz for this project were copied from/learned by following the, 'How to Create JS Quiz App,' tutorial on [Webdevtrick.com](https://webdevtrick.com/create-javascript-quiz-program/) and adjusted by the developer.
 
-* The modal dialog box used to display the correct question answers, GIF images and descriptions was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
+* The modal dialog box used to display the correct question answers, GIF images, and descriptions was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
 
 * The modal dialog box used to display the directions for the game was copied from [Bootstrap](https://getbootstrap.com/docs/4.5/components/modal/).
 
@@ -155,6 +203,10 @@ Thorough testing was conducted to remove bugs from this project. To read a full 
 * Line 2 of question.js, which enables `jQuery.noConflict())` mode was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
 
 * The classes used to style the game's grid and buttons were also copied from [Bootstrap](https://getbootstrap.com).
+
+* The solution code for removing the blue outline from `.navbar-toggler` was copied from [Stack Overflow](https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked) and applied to the [stylesheet](assets/css/style.css).
+
+* The JavaScript used to make the navbar toggler close automatically after a link is clinked was copied from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
 
 ### Media
 

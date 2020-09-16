@@ -114,7 +114,7 @@ var questions = [
             "Ivan the Terrible"
         ],
         "Charles VI of France",
-        "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful prior to going crazy.",
+        "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful before going crazy.",
         "https://media.giphy.com/media/cI6Qfr0bWjDWM/giphy.gif"
     ),
 

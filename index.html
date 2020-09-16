@@ -113,7 +113,7 @@
 		<div class="modal-dialog modal-full">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class='col-12 modal-title text-center'>How To Play</h5>
+					<h3 class='col-12 directions-title text-center'>How To Play</h3>
 				</div>
 				<div class="modal-body">
 					<p>Description will go here</p>
@@ -127,6 +127,7 @@
 	<!--./end-how-to-play-modal-->
 
 	<!-- All Scripts Start Loading Here -->
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<!--Copied from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
@@ -139,6 +140,18 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
+
+		<!-- Remove Active State Script -->
+		<!-- This script was added to repair an error causing the navbar to remain in the 'active' state by overriding Bootstrap's default CSS -->
+		<!-- Copied from Stack Overflow (https://stackoverflow.com/questions/36105119/bootstrap-change-navbar-active-background-color?answertab=active#tab-top) -->
+		<script>
+			let selector = 'li.nav-item a.nav-link';
+			$(selector).on('click', function () {
+				$(selector).removeClass('active');
+				$(this).addClass('active');
+			});
+		</script>
+		<!--./remove-active-state-script-->
 
 	<!-- Load Custom JS Here-->
 	<script src="assets/scripts/question.js"></script>

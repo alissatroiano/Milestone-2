@@ -25,7 +25,7 @@
 	<header>
 		<!-- Navbar copied from getbootstrap.com -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="index.html"><i class="fas fa-crown"></i> Game Of Facts</a>
+			<a class="navbar-brand"href="#play"><i class="fas fa-crown" href="#play"></i> Game Of Facts</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -49,9 +49,9 @@
 	<!-- Game Container Starts Here -->
 	<section class="play" id="play">
 		<div class="container-fluid">
-			<div class="row d-flex text-center">
+			<div class="row text-center">
 				<!--Question column starts here-->
-				<div class="col-md-6 flex-column">
+				<div class="col-md-6">
 					<div class="quiz-column">
 						<!--Quiz div starts here -->
 						<div id="quiz">
@@ -70,13 +70,13 @@
 				</div>
 				<!--./end-question-column-->
 				<!--Answer column with multiple choices starts here-->
-				<div class="col-md-6 flex-column">
+				<div class="col-md-6">
 					<div class="answer-column">
 						<!--Answer Buttons containing multiple choice answers/options start here-->
 						<div class="buttons">
-							<button id="btn0" tabindex="0"><span id="choice0"></span></button>
-							<button id="btn1" tabindex="0"><span id="choice1"></span></button>
-							<button id="btn2" tabindex="0"><span id="choice2"></span></button>
+							<button id="btn0"><span id="choice0"></span></button>
+							<button id="btn1"><span id="choice1"></span></button>
+							<button id="btn2"><span id="choice2"></span></button>
 						</div>
 						<!--./end-answer-buttons-->
 					</div>
@@ -92,16 +92,15 @@
 		<div class="modal-dialog modal-full">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class='col-12 modal-title text-center' tabindex="0">
+					<h5 class='col-12 modal-title text-center'>
 					</h5>
 				</div>
 				<div class="modal-body">
 					<img id="image" alt="image" tabindex="0" src="" />
-					<div id="description" tabindex="0"></div>
+					<div id="description"></div>
 				</div>
 				<div class="modal-footer justify-content-center">
-					<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-modal"
-						tabindex="0">close</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-modal">close</button>
 				</div>
 			</div>
 		</div>

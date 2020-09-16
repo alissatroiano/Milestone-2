@@ -1,6 +1,6 @@
 # Game Of Facts
 
-As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for educators of global history and fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'. This project was built with HTML, CSS, Bootstrap 4, JavaScript, and jQuery to produce an educational and interactive experience.
+As the Milestone 2 Project for [Code Institute's](https://codeinstitute.net/), 'Interactive Frontend Development' portion of the Full Stack Developer Program,  Game Of Facts is a web-based trivia game built for Game of Thrones fans and educators of global history. This project was built with HTML, CSS, Bootstrap 4, JavaScript, and jQuery to produce an educational and interactive experience.
 
 ![responsive-view](wireframes/amiresponsive.png)
 
@@ -10,15 +10,17 @@ The primary goals of, ' Game Of Facts' are:
 
 * Create an interactive trivia game that is both informative and fun.
 
-* Present historical/factual information in a fun and teachable way.
+* Present historical/factual information in a fun and learnable way.
 
- Game Of Facts' target market is comprised of:
+Game Of Facts' target market is comprised of:
 
-* Men & women (ages 18-34) who enjoy history and are avid fans of George R.R. Martin' book series, 'A Song Of Ice and Fire' and/or the HBO's hit tv series, 'Game Of Thrones'.
+* Men & women (ages 18-34) who enjoy history and are fans of the, 'A Song Of Ice and Fire' book series and/or the HBO hit TV series, 'Game Of Thrones'.
 
-* Educators of world/global history that want to incorporate pop-culture and fun into their lessons.
+* Educators of world/global history that want to incorporate games and pop-culture into their lesson.
 
 ***NOTE: This game should not be played by anybody who has not finished the television or book series, as it may contain spoilers.***
+
+A full write-up of the target market analysis can be viewed [here](wireframes/targetmarket.pdf)
 
 User Stories were created during the development phase of this project to help the developer begin the wireframe process.
 
@@ -28,9 +30,9 @@ This document can be viewed [here](wireframes/userstories.jpg)
 
 This Strategy Plane activity was conducted to determine which features were the most important and most viable.
 
-![Strategy Table](wireframes/strategytable.png)
+![Strategy Table](wireframes/tradeofftable.png)
 
-![Trade Off Table](wireframes/tradeofftable.png)
+![Trade Off Chart](wireframes/tradeoffchart.png)
 
 The Trade-off Table exercise can be viewed in its' entirety [here](wireframes/strategy.pdf).
 
@@ -42,7 +44,7 @@ Once the strategy exercises were completed, the following wireframes were create
 
 ![Mobile](wireframes/mobile.png)
 
-These wireframes were created with [Balsamiq](https://balsamiq.com/) wireframing software and can be viewed [here](wireframes/wireframes.pdf).
+All wireframes were created with [Balsamiq](https://balsamiq.com/) wireframing software and can be viewed as a PDF document [here](wireframes/wireframes.pdf).
 
 ### Features
 
@@ -101,7 +103,7 @@ The following color palette was chosen by the [developer](https://github.com/ali
 
 * [Git](https://git-scm.com/)
 
-* [GitPod](https://gitpod.io/)
+* [Gitpod](https://gitpod.io/)
 
 * [JSHint](https://JSHint.com)
 
@@ -119,20 +121,20 @@ The following color palette was chosen by the [developer](https://github.com/ali
 
 ## Testing
 
-Thorough testing was conducted to remove bugs from this project. To read a full write-up of the testing process, please refer to [TESTING](TESTING.MD).
+Defensive programming was implemented by the developer to ensure the game's speed and functionality. To read a full write-up of these tests, please refer to [TESTING](TESTING.MD).
 
 ## Deployment
 
-This project was deployed with [Github Pages](https://pages.github.com/). The [developer](https://github.com/alissatroiano) deployed the project successfully by following these steps:
+This project was deployed with [GitHub Pages](https://pages.github.com/). The [developer](https://github.com/alissatroiano) deployed the project successfully by following these steps:
 
 1. Created a repository on GitHub.
 1. Exported the project to Gitpod.
 1. Opened the project in Gitpod.
 1. Created index.html.
 1. Built project website.
-1. Committed and pushed all changes to Github.
+1. Committed and pushed all changes to GitHub.
 1. Imported project into GitHub Desktop and VSCode to work on Animations_Branch and experiment with new features.
-1. Committed and pushed all changes to Github.
+1. Committed and pushed all changes to GitHub.
 1. Merged Animations_Branch into master.
 1. Deleted alternate branches.
 1. Once the project was completed, I visited "repository settings" on GitHub.com.
@@ -221,3 +223,7 @@ You can also:
 * The markdown used to create this README.md document was learned from [commonmark.org](https://commonmark.org).
 
 * Acknowledgments go to [MDN Web Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain) for providing learnable information about inheritance and the **prototype** chain, which were used to help me gain a more thorough understanding of prototyping in JavaScript.
+
+* The article, 'Mastering Markdown' by [GitHub Guides](https://guides.github.com/features/mastering-markdown/) for providing a useful markdown syntax guide.
+
+* [Code Institute's](https://codeinstitute.net/) [README Template](https://github.com/Code-Institute-Solutions/readme-template) was used as a guide and foundation for this README document.

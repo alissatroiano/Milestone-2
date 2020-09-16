@@ -25,7 +25,7 @@
 	<header>
 		<!-- Navbar copied from getbootstrap.com -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand"href="#play"><i class="fas fa-crown" href="#play"></i> Game Of Facts</a>
+			<a class="navbar-brand" href="#play"><i class="fas fa-crown"></i> Game Of Facts</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -96,7 +96,7 @@
 					</h5>
 				</div>
 				<div class="modal-body">
-					<img id="image" alt="image" tabindex="0" src="" />
+					<img id="image" alt="image" tabindex="0" src="assets/scripts/question.js" />
 					<div id="description"></div>
 				</div>
 				<div class="modal-footer justify-content-center">
@@ -140,17 +140,17 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
 
-		<!-- Remove Active State Script -->
-		<!-- This script was added to repair an error causing the navbar to remain in the 'active' state by overriding Bootstrap's default CSS -->
-		<!-- Copied from Stack Overflow (https://stackoverflow.com/questions/36105119/bootstrap-change-navbar-active-background-color?answertab=active#tab-top) -->
-		<script>
-			let selector = 'li.nav-item a.nav-link';
-			$(selector).on('click', function () {
-				$(selector).removeClass('active');
-				$(this).addClass('active');
-			});
-		</script>
-		<!--./remove-active-state-script-->
+	<!-- Remove Active State Script -->
+	<!-- This script was added to repair an error causing the navbar to remain in the 'active' state by overriding Bootstrap's default CSS -->
+	<!-- Copied from Stack Overflow (https://stackoverflow.com/questions/36105119/bootstrap-change-navbar-active-background-color?answertab=active#tab-top) -->
+	<script>
+		let selector = 'li.nav-item a.nav-link';
+		$(selector).on('click', function () {
+			$(selector).removeClass('active');
+			$(this).addClass('active');
+		});
+	</script>
+	<!--./remove-active-state-script-->
 
 	<!-- Load Custom JS Here-->
 	<script src="assets/scripts/question.js"></script>

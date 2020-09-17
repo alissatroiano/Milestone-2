@@ -180,6 +180,19 @@ The following tests have been conducted by the developer. Each test described be
     * Refactor.
     * Declare tests, ‘pass’.
 
+4. Jasmine Tests - showProgress Function
+    * Add new specs to ensure that showProgress uses array of objects index to generate progress.
+    * Fail tests for a while.
+    * Refactor code until pass.
+    * Declare test, 'pass'.
+
+5. Jasmine Tests - showScores Function
+    * Add new specs to ensure that showScores uses jQuery to manipulate HTML and display scores.
+    * Fail tests for quite a while.
+    * Refactor code to read, `expect(Quiz(showScores)).toBe(this.score)`.
+    * Run test again.
+    * Declare test, 'pass'.
+
 ## Jasmine Test Suite - **Bugs**
 
 1. Bug - Reference Error #1
@@ -188,13 +201,16 @@ The following tests have been conducted by the developer. Each test described be
     * Observe a Reference Error.
     * Identify cause of error, `ReferenceError: gameOverHTML is not defined`.
     * Troubleshoot.
-    * Move on for time being.
+    * Add `var $ = document.readyState;` to the top of question.js.
+    * Run tests again.
+    * Observe that tests pass.
 
 2. Bug - Type Error #1
     * Test the showScores function
     * Receive the following Type Error, `TypeError: Cannot set property 'innerHTML' of null` (question.js:88:23).
     * Write and rewrite functions in `question.js`.
     * Continue to fail test.
+    * Refactor until pass.
 
 3. Bug - `$` Not Defined
     * Create new spec, `expect($).toBeDefined()`.

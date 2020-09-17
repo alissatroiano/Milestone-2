@@ -1,4 +1,6 @@
 /* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
+var $ = document.readyState;
+
 function Quiz() {
     this.score = 0;
     this.questions = questions;
@@ -98,7 +100,6 @@ function showScores() {
     $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
     $("div#results").css({ "width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0" });
 }
-
 
 // The questions array is defined here
 var questions = [

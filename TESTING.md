@@ -122,10 +122,18 @@ The following tests have been conducted by the developer. Each test described be
     * Add the `Remove Active State Script` to index.html.
     * Save and commit updated code.
     * Check on mobile again.
-    * Declare test, ‘pass’.
+    * Observe that active state is still enabled.
+    * Remove script. ***See next test for solution***
 
 3. Navigation Test 3 - Toggler Icon Test
-
+    * Open project in mobile browser.
+    * Click on navbar-toggler.
+    * Click on 'How To Play` link to ensure modal dialog opens.
+    * Observe **BUG** Navbar is stuck on active/expanded state and does not autoclose after clicking on a link.
+    * Research the issue.
+    * Add a new script to bottom of `index.html`.
+    * Test with responsive design mode and see that navbar is now closing automatically.
+    * Commit code to prepare for final mobile test.
 
 ## WC3 Jigsaw Validator
 
@@ -173,6 +181,7 @@ The following tests have been conducted by the developer. Each test described be
     * Declare tests, ‘pass’.
 
 ## Jasmine Test Suite - **Bugs**
+
 1. Bug - Reference Error #1
     * Add specs to show that `showScores()` function generates scores.
     * Run test, `expect(quiz.isEnded()).toBe(showScores(gameOverHTML))`.

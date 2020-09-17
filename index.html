@@ -25,9 +25,9 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="index.html"><i class="fas fa-crown"></i> A Quiz Of Ice and Fire</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
@@ -64,82 +64,92 @@
 						<h1></h1>
 						<h2 id="score"></h2>
 					</div>
-		            </div>
-				</div>
-				<!--./end-question-column-->
-				<!--Answer column with multiple choices starts here-->
-				<div class="col-md-6">
-					<div class="answer-column">
-						<!--Answer Buttons containing multiple choice answers/options start here-->
-						<div class="buttons">
-							<button id="btn0" tabindex="0"><span id="choice0"></span></button>
-							<button id="btn1" tabindex="0"><span id="choice1"></span></button>
-							<button id="btn2" tabindex="0"><span id="choice2"></span></button>
-						</div>
-						<!--./end-answer-buttons-->
-					</div>
-				</div>
-				<!--./end-answer-column-->
-			</div>
-		</div>
-		<!--./end-game-container-->
-
-		<!--Correct Answer Modal Starts Here-->
-		<div class="modal fade" id="modal" tabindex="-1">
-			<div class="modal-dialog modal-full">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class='col-12 modal-title text-center' tabindex="0">
-						</h5>
-					</div>
-					<div class="modal-body">
-						<img id="image" alt="image" tabindex="0" src="" />
-						<div id="description" tabindex="0"></div>
-					</div>
-					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-modal" tabindex="0">close</button>
-					</div>
 				</div>
 			</div>
+			<!--./end-question-column-->
+			<!--Answer column with multiple choices starts here-->
+			<div class="col-md-6">
+				<div class="answer-column">
+					<!--Answer Buttons containing multiple choice answers/options start here-->
+					<div class="buttons">
+						<button id="btn0" tabindex="0"><span id="choice0"></span></button>
+						<button id="btn1" tabindex="0"><span id="choice1"></span></button>
+						<button id="btn2" tabindex="0"><span id="choice2"></span></button>
+					</div>
+					<!--./end-answer-buttons-->
+				</div>
+			</div>
+			<!--./end-answer-column-->
 		</div>
-		<!--./end-correct-answer-modal-->
+	</div>
+	<!--./end-game-container-->
 
-		<!--How To Play Modal Starts Here-->
-		<div class="modal fade" id="nav-modal" tabindex="-1">
-			<div class="modal-dialog modal-full">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class='col-12 modal-title text-center'>How To Play</h5>
-					</div>
-					<div class="modal-body">
-						<p>Description will go here</p>
-					</div>
-					<div class="modal-footer justify-content-center">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
-					</div>
+	<!--Correct Answer Modal Starts Here-->
+	<div class="modal fade" id="modal" tabindex="-1">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class='col-12 modal-title text-center' tabindex="0">
+					</h5>
+				</div>
+				<div class="modal-body">
+					<img id="image" alt="image" tabindex="0" src="" />
+					<div id="description" tabindex="0"></div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-modal"
+						tabindex="0">close</button>
 				</div>
 			</div>
 		</div>
-		<!--./end-how-to-play-modal-->
+	</div>
+	<!--./end-correct-answer-modal-->
 
-		<!-- All Scripts Start Loading Here -->
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<!--Copied from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	<!--How To Play Modal Starts Here-->
+	<div class="modal fade" id="nav-modal" tabindex="-1">
+		<div class="modal-dialog modal-full">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class='col-12 modal-title text-center'>How To Play</h5>
+				</div>
+				<div class="modal-body">
+					<p>Description will go here</p>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--./end-how-to-play-modal-->
+
+	<!-- All Scripts Start Loading Here -->
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!--Copied from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
 		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
 
-		<!-- Load Custom JS Here-->
-		<script src="assets/scripts/question.js"></script>
-		<!--./end-custom-js-script-->
-		<!--./end-scripts-->
+	<!-- Load Custom JS Here-->
+	<script src="assets/scripts/question.js"></script>
+	<!--./end-custom-js-script-->
+	<!--./end-scripts-->
+
+	<!--Navbar auto-state repair script copied from https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click and adusted by developer -->
+	<script>
+		$('.navbar-nav li a').on('click', function () {
+			if (!$(this).hasClass('navbar-toggler')) {
+				$('.navbar-collapse').collapse('hide');
+			}
+		});
+	</script>
 
 </body>
 

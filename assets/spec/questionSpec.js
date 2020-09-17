@@ -4,6 +4,7 @@ describe("Game Of Facts Test Suite", function () {
             expect(Quiz()).toBe(this.questions);
         });
     });
+    
     describe('Quiz()', function () {
         it('Should use this to create quiz.score', function () {
             expect(Quiz()).toBe(this.scores);
@@ -21,6 +22,7 @@ describe("Game Of Facts Test Suite", function () {
             expect(window.alert).toHaveBeenCalledWith("Error!");
         });
     });
+   
     describe('Question()', function () {
         it('Should use this keyword to create text object', function () {
             expect(Question()).toBe(this.text);
@@ -46,7 +48,6 @@ describe("Game Of Facts Test Suite", function () {
             expect(Question()).toBe(this.image);
         });
     });
-
     describe('Question()', function () {
         it('Should use this keyword to create footer object', function () {
             expect(Question()).toBe(this.footer);
@@ -64,7 +65,7 @@ describe("Game Of Facts Test Suite", function () {
             expect($).toBeDefined();
         });
     });
-    
+
     describe('showProgress()', function () {
         it('showProgress() to display progress by using the quiz array index', function () {
             expect(Quiz()).toBe(this.questionIndex);
@@ -75,5 +76,17 @@ describe("Game Of Facts Test Suite", function () {
         it('showScores() to display scores at the end of the game', function () {
             expect(Quiz(showScores)).toBe(this.score);
         });
-    })
+    });
+
+    describe('guess()', function () {
+        it('should trigger an onclick event based on user choice', function () {
+            expect(Quiz(guess)).toBe(this.choice);
+        });
+    });
+    describe('answerModal test', function () {
+        it('should accept answer as a parameter', function () {
+            expect(Quiz(guess)).toBe(this.answer);
+        });
+    });
+
 });

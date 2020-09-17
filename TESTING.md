@@ -18,7 +18,7 @@ The following tests have been conducted by the developer. Each test described be
 
 ## Console Tests
 
-1. Test 1 - Console
+1. Console Test 1 - TypeError
     * Add a line of code.
     * Open Chrome Developer Tools and visit the console.
     * Identify a 'TypeError' on line 58.
@@ -34,11 +34,67 @@ The following tests have been conducted by the developer. Each test described be
     * Get a question wrong and repeat step.
     * Declare test, ‘pass’.
 
-3. Console Test 2 - Questions Test
+3. Console Test 3 - Questions Test
     * Open game in browser.
     * Open Chrome Developer Tools and visit the console.
     * Type, 'questions' into console and inspect log.
     * Review array after it is logged to the console.
+    * Declare test, ‘pass’.
+
+4. Console Test 4 - `console.log(typeof Quiz)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof Quiz)`.
+    * Observe that console returns `function`.
+    * Declare test, ‘pass’.
+
+5. Console Test 5 - `console.log(typeof questions)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof questions)`.
+    * Observe that console returns `object`.
+    * Declare test, ‘pass’.
+
+6. Console Test 6 - `console.log(typeof guess)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof guess)`.
+    * Observe that console returns `function`.
+    * Declare test, ‘pass’.
+
+7. Console Test 7 - `console.log(typeof play)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof play)`.
+    * Observe that console returns `function`.
+    * Declare test, ‘pass’.
+
+8. Console Test 8 - `console.log(typeof Question)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof Question)`.
+    * Observe that console returns `function`.
+    * Declare test, ‘pass’.
+
+9. Console Test 9 - `console.log(typeof showProgress)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof showProgress)`.
+    * Observe that console returns `function`.
+    * Declare test, ‘pass’.
+
+10. Console Test 10 - `console.log(typeof showScores)` Test
+    * Open deployed project in browser.
+    * Press F12 to open Chrome Dev Tools.
+    * Visit Console.
+    * Type `console.log(typeof showScores)`.
+    * Observe that console returns `function`.
     * Declare test, ‘pass’.
 
 ## Navigation

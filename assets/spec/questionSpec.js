@@ -64,10 +64,16 @@ describe("Game Of Facts Test Suite", function () {
             expect($).toBeDefined();
         });
     });
+    
     describe('showProgress()', function () {
         it('showProgress() to display progress by using the quiz array index', function () {
             expect(Quiz()).toBe(this.questionIndex);
         });
     });
 
+    describe('showScores()', function() {
+        it('showScores() to display scores at the end of the game', function () {
+            expect(Quiz(showScores)).toBe(this.score);
+        });
+    })
 });

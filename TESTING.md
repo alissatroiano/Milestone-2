@@ -87,5 +87,17 @@ The following tests have been conducted by the developer. Each test described be
     * Modify code to repair errors.
     * Visit W3C HTML Validator.
     * Repeated this step after adding any new syntax and/or making changes.
+    * Declare test, ‘pass’.
 
 ## Test Driven Development with Jasmine
+
+1. TDD with Jasmine - Quiz Test
+    * Create new branch named, `jasmine-tdd`.
+    * Import Jasmine scripts.
+    * Create test.html.
+    * Create specs folder.
+    * Create `questionSpec.js` file for Jasmine tests.
+    * Write first test spec to test that `Quiz` returns numbers array.
+    * Fail test.
+    * Update test until pass.
+    * Declare test, ‘pass’.

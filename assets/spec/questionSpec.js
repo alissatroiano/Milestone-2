@@ -15,8 +15,10 @@ describe("Game Of Facts Test Suite", function () {
         });
     });
     describe('Quiz()', function () {
-        it('Should return an error if questions are not strings', function () {
-            expect(quizTest()).toBe(alert());
+        it('Should return an error', function () {
+            spyOn(window, "alert");
+            quizTest();
+            expect(window.alert).toHaveBeenCalledWith("Error!");
         });
     });
     describe('Question()', function () {

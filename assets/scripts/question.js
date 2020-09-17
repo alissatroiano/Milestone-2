@@ -9,11 +9,11 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
 
-function quizTest(Quiz) {
+function quizTest(questions) {
     if (typeof (questions) === "string") {
         return questions;
     } else {
-        return alert("Error!");
+       alert("Error!");
     }
 }
 

@@ -3,8 +3,7 @@ var $ = document.readyState;
 
 $.noConflict();
 
-
-Quiz = function() {
+function Quiz() {
     this.score = 0;
     this.questions = questions;
     this.questionIndex = 0;

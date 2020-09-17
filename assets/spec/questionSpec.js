@@ -59,9 +59,14 @@ describe("Game Of Facts Test Suite", function () {
         });
     });
 
-    describe('Scores()', function () {
-        it('Scores() to return a number', function () {
-            expect(Scores()).toBe();
+    describe('showScores()', function () {
+        it('showScores() to use jQuery to manipulate html', function () {
+            expect($).toBeDefined();
+        });
+    });
+    describe('showProgress()', function () {
+        it('showProgress() to display progress by using the quiz array index', function () {
+            expect(Quiz()).toBe(this.questionIndex);
         });
     });
 

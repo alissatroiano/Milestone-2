@@ -1,6 +1,4 @@
 /* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
-var $ = document.readyState;
-
 function Quiz() {
     this.score = 0;
     this.questions = questions;

@@ -126,6 +126,7 @@ The following tests have been conducted by the developer. Each test described be
 
 3. Navigation Test 3 - Toggler Icon Test
 
+
 ## WC3 Jigsaw Validator
 
 1. WC3 Jigsaw Validator
@@ -147,7 +148,7 @@ The following tests have been conducted by the developer. Each test described be
 
 ## Jasmine Test Suite
 
-1. TDD with Jasmine - Setting Up The Test Suite
+1. Jasmine Tests - Setting Up The Test Suite
     * Create new branch named, `jasmine-tdd`.
     * Import Jasmine scripts.
     * Create test.html.
@@ -157,7 +158,7 @@ The following tests have been conducted by the developer. Each test described be
     * Refactor code until tests pass.
     * Declare test, ‘pass’.
 
-2. TDD - Quiz Tests
+2. Jasmine Tests - Quiz Function Tests
     * Write first spec testing `Quiz` function generates questions array of objects.
     * Inititally fail test.
     * Refactor with question spelt incorrectly.
@@ -165,15 +166,14 @@ The following tests have been conducted by the developer. Each test described be
     * Update test until pass.
     * Declare test, ‘pass’.
 
-3. TDD - Questions Tests
+3. Jasmine Tests - Questions Function Tests
     * Add new specs to ensure `Question` function uses the this keyword to create new instances.
     * Fail tests.
     * Refactor.
     * Declare tests, ‘pass’.
 
 ## Jasmine Test Suite - **Bugs**
-
-1. TDD Bug - Reference Error #1
+1. Bug - Reference Error #1
     * Add specs to show that `showScores()` function generates scores.
     * Run test, `expect(quiz.isEnded()).toBe(showScores(gameOverHTML))`.
     * Observe a Reference Error.
@@ -181,13 +181,13 @@ The following tests have been conducted by the developer. Each test described be
     * Troubleshoot.
     * Move on for time being.
 
-2. TDD Bug - Type Error #1
+2. Bug - Type Error #1
     * Test the showScores function
     * Receive the following Type Error, `TypeError: Cannot set property 'innerHTML' of null` (question.js:88:23).
     * Write and rewrite functions in `question.js`.
     * Continue to fail test.
 
-3. TDD Bug - $ Not Defined
+3. Bug - `$` Not Defined
     * Create new spec, `expect($).toBeDefined()`.
     * Run test.
     * Fail test.
@@ -195,4 +195,6 @@ The following tests have been conducted by the developer. Each test described be
     * Observe that `$` is not defined in `question.js`.
     * Add the following line of code to `question.js`: `var $ = document.readyState;`.
     * Run test again.
-    * Declare tests, ‘pass’.
+    * Observe jasmine test is now passing.
+    * Open index.html in the browser.
+    * Observe that web app is now broken.

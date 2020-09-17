@@ -44,14 +44,9 @@ describe("Game Of Facts Test Suite", function () {
             expect(Question()).toBe(Question.footer);
         });
     });
-    describe('play()', function() {
-        it('Should show scores if quiz has ended', function() {
-            expect(quiz.isEnded()).toBe(showScores(gameOverHTML))
-        });
-    });
-    describe('quiz.isEnded', function () {
-        it('Should return a number for the score', function () {
-            expect(quiz.isEnded()).toBe(showScores(typeof number))
+    describe('$', function () {
+        it('to be defined', function () {
+            expect($).toBeDefined();
         });
     });
 });

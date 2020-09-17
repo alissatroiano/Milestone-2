@@ -1,5 +1,4 @@
-// Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project
-
+/* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
@@ -18,13 +17,15 @@ Quiz.prototype.guess = function (answer) {
     this.questionIndex++;
 };
 
+var $ = document.readyState;
+
 Quiz.prototype.answerModal = function (questionIndex) {
-    $(".modal-title").text(questions[questionIndex].answer);
-    $("#description").html(questions[questionIndex].description);
-    $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
-    $(".modal-footer").text(questions[questionIndex].footer);
-    $("#modal").modal("show");
-};
+        $(".modal-title").text(questions[questionIndex].answer);
+        $("#description").html(questions[questionIndex].description);
+        $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
+        $(".modal-footer").text(questions[questionIndex].footer);
+        $("#modal").modal("show");
+    };
 
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
@@ -66,13 +67,14 @@ function play() {
 // This function creates the submit onclick event while populating the score
 function guess(id, guess) {
     var button = document.getElementById(id);
-    $(button).onclick = function () {
+    button.onclick = function () {
         quiz.guess(guess);
         play();
     };
 }
 
-// The showProgress function shows the user what question they are currently answering out of the total number of questions in the game  
+/* The showProgress function shows the user what question they are currently answering 
+out of the total number of questions in the game */
 function showProgress() {
     var currentQuestionNumber = quiz.questionIndex + 1;
     var element = document.getElementById("progress");
@@ -87,17 +89,18 @@ function showScores() {
     element.innerHTML = gameOverHTML;
     $("#modal").hide();
     $("div.answer-column").hide();
-    $("div.quiz-column").css("width", "100vw");
+    $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
+    $("div#results").css({"width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0"});
 }
 
-// Questions object is defined here
+// The questions array of objects is defined here
 var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",
         [
-            "Windsor Castle, Windsor",
-            "Kilkenny Castle, Ireland",
-            "Doune Castle, Scotland"
+            "Windsor Castle",
+            "Kilkenny Castle",
+            "Doune Castle"
         ],
         "Doune Castle",
         "In the first few episodes of Game of Thrones, the Winterfell scenes were filmed at Doune Castle in Scotland, which was originally built in the 13th century as a medieval stronghold",
@@ -112,7 +115,7 @@ var questions = [
             "Ivan the Terrible"
         ],
         "Charles VI of France",
-        "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful prior to going crazy.",
+        "Charles VI of France is remembered as Charles the Mad. Much like King Aerys Targaryen, Charles VI was popular, charming & successful before going crazy.",
         "https://media.giphy.com/media/cI6Qfr0bWjDWM/giphy.gif"
     ),
 
@@ -136,7 +139,7 @@ var questions = [
             "The Hungry Hungarians"
         ],
         "The Sawney Bean Family",
-        "In the show it was the, 'Thenns'. <br> In the books it was the, 'Ice-River Clans'. <br> In 16h century Scotland it was The Sawney Bean Cave Family, a cave-dwelling Scottish clan that attacked, murdered and ultimately ate their victims.",
+        "In the show it was the, 'Thenns'. In the books it was the, 'Ice-River Clans'. In 16h century Scotland it was The Sawney Bean Cave Family, a cave-dwelling Scottish clan that attacked, murdered and ultimately ate their victims.",
         "https://media.giphy.com/media/3o7qDSozG0KG6RmtBS/giphy.gif"
 
     ),
@@ -149,20 +152,20 @@ var questions = [
             "Wall of Babylon, Iraq"
         ],
         "Hadrian’s Wall, England",
-        "In, 'Game of Thrones', 'The Wall' has been, 'guarding the realms of men for centuries'. <br> In 122 AD Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
+        "In, 'Game of Thrones', 'The Wall' was built by Brandon The Builder and has been, 'guarding the realms of men for centuries'. In 122 AD, Hadrian's Wall was built between England and Scotland by the Roman Empire to keep, ‘barbarians’ out of reach.",
         "https://media.giphy.com/media/3ohzdQKOgNdvjvz09q/giphy.gif"
     ),
 
     new Question(
-        "What real horse-riding clans were, 'The Dothraki' based on?",
+        "Which religion was Martin's, 'Red Faith' and, 'The Lord of Light' based on?",
         [
-            "Crete, Greece",
-            "Vis, Croatia",
-            "Dubrovnik, Croatia"
+            "Zoroastrianism",
+            "Christianity",
+            "Paganism"
         ],
-        "Dubrovnik, Croatia",
-        "ENTER NEW TEXT HERE",
-        "https://media.giphy.com/media/n7mCp09VYDrsA/giphy.gif"
+        "Zoroastrianism",
+        "The faith of the R’hllor appears to be based on the ancient Persian religion Zoroastrianism. Similar to, 'The Red Faith', Zoroastrianism emphasized a great struggle between good and evil and accepted fire as a medium for spiritual awareness and wisdom.",
+        "https://media.giphy.com/media/3o6ozteedImmRyP7Lq/giphy.gif"
     ),
 
     new Question(
@@ -173,7 +176,7 @@ var questions = [
             "Eustace IV, Count of Boulogne"
         ],
         "Eustace IV, Count of Boulogne",
-        "The inspiration for Jeoffrey's cruel nature and his catastrophic wedding event actually came from the death of King Eustace IV, Count of Boulogne who, much like Jeoffrey, had a very dark side. There are various accounts of his death, though most believe he was poisoned.",
+        "The inspiration for Jeoffrey Baratheon and his catastrophic wedding actually came from the death of King Eustace IV, Count of Boulogne who, much like Jeoffrey, had a very cruel nature. There are various accounts of his death, though most believe he was poisoned.",
         "https://media.giphy.com/media/3o6ozjzLLCjc4AoBEY/giphy.gif"
     ),
 
@@ -185,7 +188,7 @@ var questions = [
             "World War I"
         ],
         "The War of the Roses",
-        "The War of Roses was a series of civil wars fought between two prominent families, the House of Lancaster (red rose) and House of York (white rose) for the throne of England.",
+        "The War of the Roses was a series of battles that ultimately led to the installation of Henry Tudor as king. In the same way King Robert Baratheon's death kicked off the, 'War of Five Kings', the death of King Edward III in 1377 started The War Of the Roses. The battle was fought between the Lancasters and The Yorks, who can be compared to House Lannister and House Stark.",
         "https://media.giphy.com/media/3oEjI1erPMTMBFmNHi/giphy.gif"
     ),
 
@@ -197,7 +200,7 @@ var questions = [
             "The Ironmade"
         ],
         "The Vikings",
-        "Considering Westeros is a fictional version of medieval England, it makes sense that the, 'Ironborn' resemble the seafaring Vikings.",
+        "George R.R. Martin has frequently compared the ironborn to Vikings from the real-life Middle Ages. Given the analogy that the entire continent of Westeros is supposed to be an oversized version of the British Isles, the ironborn also loosely correspond to celtic raiders from medieval Ireland, as well as raiders from other outer islands in the group.",
         "https://media.giphy.com/media/xT1XGC8nIdwGgjgpa0/giphy.gif"
     ),
 

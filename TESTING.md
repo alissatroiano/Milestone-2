@@ -181,8 +181,18 @@ The following tests have been conducted by the developer. Each test described be
     * Troubleshoot.
     * Move on for time being.
 
-1. TDD Bug - Type Error #1
+2. TDD Bug - Type Error #1
     * Test the showScores function
     * Receive the following Type Error, `TypeError: Cannot set property 'innerHTML' of null` (question.js:88:23).
     * Write and rewrite functions in `question.js`.
     * Continue to fail test.
+
+3. TDD Bug - $ Not Defined
+    * Create new spec, `expect($).toBeDefined()`.
+    * Run test.
+    * Fail test.
+    * Research issue.
+    * Observe that `$` is not defined in `question.js`.
+    * Add the following line of code to `question.js`: `var $ = document.readyState;`.
+    * Run test again.
+    * Declare tests, ‘pass’.

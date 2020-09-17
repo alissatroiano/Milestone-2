@@ -140,16 +140,13 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
 
-	<!-- Remove Active State Script -->
-	<!-- This script was added to repair an error causing the navbar to remain in the 'active' state by overriding Bootstrap's default CSS -->
-	<!-- Copied from Stack Overflow (https://stackoverflow.com/questions/36105119/bootstrap-change-navbar-active-background-color?answertab=active#tab-top) -->
+	<!-- This script was written by the developer to repair navbar active state -->
 	<script>
-		let selector = 'li.nav-item a.nav-link';
-		$(selector).on('click', function () {
-			$(selector).removeClass('active');
-			$(this).addClass('active');
-		});
+	$('.navbar-collapse a').click(function () {
+	$('collapse.navbar-collapse').hide();
+	});
 	</script>
+
 	<!--./remove-active-state-script-->
 
 	<!-- Load Custom JS Here-->

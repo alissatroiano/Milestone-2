@@ -4,7 +4,7 @@ describe("Game Of Facts Test Suite", function () {
             expect(Quiz()).toBe(this.questions);
         });
     });
-    
+
     describe('Quiz()', function () {
         it('Should use this to create quiz.score', function () {
             expect(Quiz()).toBe(this.scores);
@@ -22,7 +22,7 @@ describe("Game Of Facts Test Suite", function () {
             expect(window.alert).toHaveBeenCalledWith("Error!");
         });
     });
-   
+
     describe('Question()', function () {
         it('Should use this keyword to create text object', function () {
             expect(Question()).toBe(this.text);
@@ -72,7 +72,7 @@ describe("Game Of Facts Test Suite", function () {
         });
     });
 
-    describe('showScores()', function() {
+    describe('showScores()', function () {
         it('showScores() to display scores at the end of the game', function () {
             expect(Quiz(showScores)).toBe(this.score);
         });

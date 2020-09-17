@@ -23,37 +23,39 @@ describe("Game Of Facts Test Suite", function () {
     });
     describe('Question()', function () {
         it('Should use this keyword to create text object', function () {
-            expect(Question()).toBe(Question.text);
+            expect(Question()).toBe(this.text);
         });
     });
     describe('Question()', function () {
         it('Should use this keyword to create choices object', function () {
-            expect(Question()).toBe(Question.choices);
+            expect(Question()).toBe(this.choices);
         });
     });
     describe('Question()', function () {
         it('Should use this keyword to create answer object', function () {
-            expect(Question()).toBe(Question.answer);
+            expect(Question()).toBe(this.answer);
         });
     });
     describe('Question()', function () {
         it('Should use this keyword to create description object', function () {
-            expect(Question()).toBe(Question.description);
+            expect(Question()).toBe(this.description);
         });
     });
     describe('Question()', function () {
         it('Should use this keyword to create image object', function () {
-            expect(Question()).toBe(Question.image);
+            expect(Question()).toBe(this.image);
         });
     });
     describe('Question()', function () {
         it('Should use this keyword to create footer object', function () {
-            expect(Question()).toBe(Question.footer);
+            expect(Question()).toBe(this.footer);
         });
     });
+
     describe('$', function () {
         it('to be defined', function () {
             expect($).toBeDefined();
         });
     });
+
 });

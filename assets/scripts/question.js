@@ -90,7 +90,7 @@ function showScores() {
     $("div.quiz-column").css("width", "100vw");
 }
 
-// The questions array is defined here
+// Questions object is defined here
 var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",

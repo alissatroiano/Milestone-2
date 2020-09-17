@@ -145,15 +145,38 @@ The following tests have been conducted by the developer. Each test described be
     * Repeated this step after adding any new syntax and/or making changes.
     * Declare test, ‘pass’.
 
-## Test Driven Development with Jasmine
+## Jasmine Test Suite
 
-1. TDD with Jasmine - Quiz Test
+1. TDD with Jasmine - Setting Up The Test Suite
     * Create new branch named, `jasmine-tdd`.
     * Import Jasmine scripts.
     * Create test.html.
     * Create specs folder.
     * Create `questionSpec.js` file for Jasmine tests.
-    * Write first test spec to test that `Quiz` returns numbers array.
-    * Fail test.
+    * Open `question.js` and call some functions by declaring new functions.
+    * Refactor code until tests pass.
+    * Declare test, ‘pass’.
+
+2. TDD - Quiz Tests
+    * Write first spec testing `Quiz` function generates questions array of objects.
+    * Inititally fail test.
+    * Refactor with question spelt incorrectly.
+    * Fail again.
     * Update test until pass.
     * Declare test, ‘pass’.
+
+3. TDD - Questions Tests
+    * Add new specs to ensure `Question` function uses the this keyword to create new instances.
+    * Fail tests.
+    * Refactor.
+    * Declare tests, ‘pass’.
+
+## Jasmine Test Suite - **Bugs**
+
+1. TDD Bug - Reference Error #1
+    * Add specs to show that `showScores()` function generates scores.
+    * Run test, `expect(quiz.isEnded()).toBe(showScores(gameOverHTML))`.
+    * Observe a Reference Error.
+    * Identify cause of error, `ReferenceError: gameOverHTML is not defined`.
+    * Troubleshoot.
+    * Move on for time being.

@@ -3,7 +3,8 @@ var $ = document.readyState;
 
 $.noConflict();
 
-function Quiz(questions) {
+
+Quiz = function() {
     this.score = 0;
     this.questions = questions;
     this.questionIndex = 0;
@@ -102,6 +103,7 @@ function showScores() {
     $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
     $("div#results").css({ "width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0" });
 }
+
 
 // The questions array is defined here
 var questions = [

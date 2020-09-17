@@ -165,7 +165,7 @@ The following tests have been conducted by the developer. Each test described be
     * Update test until pass.
     * Declare test, ‘pass’.
 
-3. TDD - Questions Tests
+4. TDD - Questions Tests
     * Add new specs to ensure `Question` function uses the this keyword to create new instances.
     * Fail tests.
     * Refactor.

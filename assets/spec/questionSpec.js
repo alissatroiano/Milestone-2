@@ -46,6 +46,7 @@ describe("Game Of Facts Test Suite", function () {
             expect(Question()).toBe(this.image);
         });
     });
+
     describe('Question()', function () {
         it('Should use this keyword to create footer object', function () {
             expect(Question()).toBe(this.footer);
@@ -55,6 +56,12 @@ describe("Game Of Facts Test Suite", function () {
     describe('$', function () {
         it('to be defined', function () {
             expect($).toBeDefined();
+        });
+    });
+
+    describe('Scores()', function () {
+        it('Scores() to return a number', function () {
+            expect(Scores()).toBe();
         });
     });
 

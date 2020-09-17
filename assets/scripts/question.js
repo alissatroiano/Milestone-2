@@ -1,8 +1,20 @@
 /* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
+var $ = document.readyState;
+
+$.noConflict();
+
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
     this.questionIndex = 0;
+}
+
+function quizTest(Quiz) {
+    if (typeof (questions) === "string") {
+        return questions;
+    } else {
+        return alert("Error!");
+    }
 }
 
 Quiz.prototype.getQuestionIndex = function () {
@@ -17,15 +29,13 @@ Quiz.prototype.guess = function (answer) {
     this.questionIndex++;
 };
 
-var $ = document.readyState;
-
 Quiz.prototype.answerModal = function (questionIndex) {
-        $(".modal-title").text(questions[questionIndex].answer);
-        $("#description").html(questions[questionIndex].description);
-        $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
-        $(".modal-footer").text(questions[questionIndex].footer);
-        $("#modal").modal("show");
-    };
+    $(".modal-title").text(questions[questionIndex].answer);
+    $("#description").html(questions[questionIndex].description);
+    $("#image").attr("src", questions[questionIndex].image).attr("alt", questions[questionIndex].answer);
+    $(".modal-footer").text(questions[questionIndex].footer);
+    $("#modal").modal("show");
+};
 
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
@@ -90,10 +100,10 @@ function showScores() {
     $("#modal").hide();
     $("div.answer-column").hide();
     $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
-    $("div#results").css({"width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0"});
+    $("div#results").css({ "width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0" });
 }
 
-// The questions array of objects is defined here
+// The questions array is defined here
 var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",

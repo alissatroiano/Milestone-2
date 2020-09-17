@@ -6,12 +6,17 @@ describe("Game Of Facts Test Suite", function () {
     });
     describe('Quiz()', function () {
         it('Should use this to create quiz.score', function () {
-            expect(Quiz()).toBe(quiz.scores);
+            expect(Quiz()).toBe(this.scores);
         });
     });
     describe('Quiz()', function () {
         it('Should use this to create quiz.questionIndex', function () {
-            expect(Quiz()).toBe(quiz.questionIndexs);
+            expect(Quiz()).toBe(this.questionIndex);
+        });
+    });
+    describe('Quiz()', function () {
+        it('Should return an error if questions are not strings', function () {
+            expect(quizTest()).toBe(alert());
         });
     });
     describe('Question()', function () {

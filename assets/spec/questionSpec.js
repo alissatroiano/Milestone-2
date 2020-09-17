@@ -47,6 +47,11 @@ describe("Game Of Facts Test Suite", function () {
     describe('play()', function() {
         it('Should show scores if quiz has ended', function() {
             expect(quiz.isEnded()).toBe(showScores(gameOverHTML))
-        })
-    })
+        });
+    });
+    describe('quiz.isEnded', function () {
+        it('Should return a number for the score', function () {
+            expect(quiz.isEnded()).toBe(showScores(typeof number))
+        });
+    });
 });

@@ -180,3 +180,9 @@ The following tests have been conducted by the developer. Each test described be
     * Identify cause of error, `ReferenceError: gameOverHTML is not defined`.
     * Troubleshoot.
     * Move on for time being.
+
+1. TDD Bug - Type Error #1
+    * Test the showScores function
+    * Receive the following Type Error, `TypeError: Cannot set property 'innerHTML' of null` (question.js:88:23).
+    * Write and rewrite functions in `question.js`.
+    * Continue to fail test.

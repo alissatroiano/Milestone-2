@@ -1,7 +1,7 @@
 describe("Game Of Facts Test Suite", function () {
     describe('Quiz()', function () {
         it('Should use this keyword to create questions array of objects', function () {
-            expect(Quiz()).toBe(questions);
+            expect(Quiz()).toBe(this.questions);
         });
     });
     describe('Quiz()', function () {

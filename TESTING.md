@@ -238,8 +238,6 @@ The following tests have been conducted by the developer. Each test described be
     * Run test again.
     * Declare test, 'pass'.
 
-6. Jasmine Tests - Test that 
-
 ## Jasmine Test Suite - **Bugs**
 
 1. Bug - Reference Error #1

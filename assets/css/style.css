@@ -41,8 +41,8 @@ h1 {
 
 /* Solution code for .navbar-toggler copied from https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked */
 .navbar-toggler {
-       outline: none !important;
-       box-shadow: none;
+    outline: none !important;
+    box-shadow: none;
 }
 
 .bg-dark {
@@ -96,7 +96,7 @@ h1 {
 
 /*------------------------- How To Play Modal */
 p#directions-body {
-    font-family:'Futura-PT', sans-serif;
+    font-family: 'Futura-PT', sans-serif;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 300;
@@ -266,7 +266,7 @@ img {
 
 .modal-open {
     overflow: visible;
-     border: none;
+    border: none;
 }
 
 /*-------------------------- Media Queries */

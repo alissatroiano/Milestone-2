@@ -1,6 +1,4 @@
 /* Quiz tutorial found on webdevtrick (https://webdevtrick.com) and followed/customized by developer for this project */
-var $ = document.readyState;
-
 function Quiz() {
     this.score = 0;
     this.questions = questions;
@@ -59,6 +57,7 @@ function play() {
     else {
         // show question
         var element = document.getElementById("question");
+        console.log();
         element.innerHTML = quiz.getQuestionIndex().text;
 
         // show options
@@ -91,7 +90,7 @@ function showProgress() {
 
 // The showScores function uses jQuery to display the scores of the quiz upon completion
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    gameOverHTML = "<h1>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;

@@ -1,25 +1,30 @@
 describe("Game Of Facts Test Suite", function () {
     describe('Quiz()', function () {
-        it('Should use this keyword to create questions array of objects', function () {
-            expect(Quiz()).toBe(this.questions);
-        });
-    });
-
-    describe('Quiz()', function () {
-        it('Should use this to create quiz.score', function () {
-            expect(Quiz()).toBe(this.scores);
-        });
-    });
-    describe('Quiz()', function () {
-        it('Should use this to create quiz.questionIndex', function () {
-            expect(Quiz()).toBe(this.questionIndex);
-        });
-    });
-    describe('Quiz()', function () {
         it('Should return an error', function () {
             spyOn(window, "alert");
             quizTest();
             expect(window.alert).toHaveBeenCalledWith("Error!");
+        });
+    });
+
+    // Show that the game can end
+    describe('showScores test', function () {
+        it('Should be called when game has ended', function () {
+            spyOn(window, "showScores")
+            quiz.questions = [];
+            quiz.questionIndex = 0;
+            play();
+            expect(window.showScores).toHaveBeenCalled();
+        });
+    });
+
+    describe('showScores()', function () {
+        it('that game has ended and showScores method is called', function () {
+            spyOn(window, "showScores")
+            quiz.questions = [];
+            quiz.questionIndex = 0;
+            play();
+            expect(window.showScores).toHaveBeenCalled();
         });
     });
 
@@ -54,18 +59,6 @@ describe("Game Of Facts Test Suite", function () {
         });
     });
 
-    describe('$', function () {
-        it('to be defined', function () {
-            expect($).toBeDefined();
-        });
-    });
-
-    describe('showScores()', function () {
-        it('showScores() to use jQuery to manipulate html', function () {
-            expect($).toBeDefined();
-        });
-    });
-
     describe('showProgress()', function () {
         it('showProgress() to display progress by using the quiz array index', function () {
             expect(Quiz()).toBe(this.questionIndex);
@@ -78,11 +71,6 @@ describe("Game Of Facts Test Suite", function () {
         });
     });
 
-    describe('guess()', function () {
-        it('should trigger an onclick event based on user choice', function () {
-            expect(Quiz(guess)).toBe(this.choice);
-        });
-    });
     describe('answerModal test', function () {
         it('should accept answer as a parameter', function () {
             expect(Quiz(guess)).toBe(this.answer);

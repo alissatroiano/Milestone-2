@@ -210,6 +210,8 @@ You can also:
 
 * The JavaScript used to make the navbar toggler close automatically after a link is clinked was copied from [Stack Overflow](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
 
+* The styles used to prevent the background from being scrolled while modal is open were copied from [CSS Tricks](https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/).
+
 ### Media
 
 * The background image of the iron throne used in the jumbotron section was downloaded/licensed via [Shutterstock](https://www.shutterstock.com/image-illustration/medieval-iron-throne-kings-made-weapons-1403501564).

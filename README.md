@@ -202,8 +202,6 @@ You can also:
 
 * The media queries in the stylesheet were copied/learned from [w3schools.com](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
-* Line 2 of question.js, which enables `jQuery.noConflict())` mode was copied from [jQuery.com](https://api.jquery.com/jQuery.noConflict/)
-
 * The classes used to style the game's grid and buttons were also copied from [Bootstrap](https://getbootstrap.com).
 
 * The solution code for removing the blue outline from `.navbar-toggler` was copied from [Stack Overflow](https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked) and applied to the [stylesheet](assets/css/style.css).
@@ -219,8 +217,6 @@ You can also:
 ### Acknowledgements
 
 * The JavaScript and jQuery techniques used to build this project were learned during the 'Interactive Frontend Development' portion of [Code Institute's](https://codeinstitute.net/) Full-Stack Software Developer Program.
-
-* [Quackit.com](https://www.quackit.com) for providing this informative article titled, ['HTML audio tag'](https://www.quackit.com/html/tags/html_audio_tag.cfm).
 
 * The markdown used to create this README.md document was learned from [commonmark.org](https://commonmark.org).
 

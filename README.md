@@ -34,7 +34,7 @@ This Strategy Plane activity was conducted to determine which features were the 
 
 ![Trade Off Chart](wireframes/tradeoffchart.png)
 
-The Trade-off Table exercise can be viewed in its' entirety [here](wireframes/strategy.pdf).
+The trade-off activity can be viewed in full in this [document](wireframes/strategy.pdf)
 
 Once the strategy exercises were completed, the following wireframes were created by the [developer](https://www.github.com/alissatroiano) to guide the development process.
 

@@ -186,7 +186,14 @@ button#btn3:focus {
 /*--------------------------  Modal */
 /* Styles for receding modal dialog copied from csstricks <https://css-tricks.com/receding-background-modal-boxes/> */
 #modal {
-     border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* This code prevents background from being scrollable while modal is open.
+Copied from https: //css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/ */
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .modal-body {

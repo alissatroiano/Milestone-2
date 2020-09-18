@@ -1,12 +1,4 @@
 describe("Game Of Facts Test Suite", function () {
-    describe('Quiz()', function () {
-        it('Should return an error', function () {
-            spyOn(window, "alert");
-            quizTest();
-            expect(window.alert).toHaveBeenCalledWith("Error!");
-        });
-    });
-
     // Show that the game can end
     describe('showScores test', function () {
         it('Should be called when game has ended', function () {

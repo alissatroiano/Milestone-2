@@ -14,6 +14,8 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
+    overflow: hidden;
+    /* min-height: 50vh; */
 }
 
 /*-------------------------- Ttles, subtitles and special text */
@@ -73,7 +75,8 @@ h1 {
     font-family: 'Futura-PT', sans-serif;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    padding-top: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #question {

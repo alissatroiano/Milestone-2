@@ -210,9 +210,13 @@ You can also:
 
 * The styles used to prevent the background from being scrolled while modal is open were copied from [CSS Tricks](https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/).
 
+* The CSS styles used to create the text/background-image effect on the cover page were copied from [Free Frontend](https://freefrontend.com/css-text-animations/) and remastered by the game's [developer](https://github.com/alissatroiano).
+
 ### Media
 
 * The background image of the iron throne used in the jumbotron section was downloaded/licensed via [Shutterstock](https://www.shutterstock.com/image-illustration/medieval-iron-throne-kings-made-weapons-1403501564).
+
+* The favicon image was downloaded/licensed via [Pixabay](https://pixabay.com/illustrations/crown-icon-noble-silhouette-king-1332785/)
 
 ### Acknowledgements
 

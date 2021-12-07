@@ -36,7 +36,7 @@
 		}
 
 		h1 {
-			position: relative;
+			position: fixed;
 			font-family: 'Trajan-Pro-3', sans-serif;
 			font-size: calc(10px + 10vw);
 			font-weight: 700;
@@ -44,6 +44,7 @@
 			letter-spacing: 0.02em;
 			text-transform: uppercase;
 			perspective: 500px;
+			text-align: center;
 		}
 
 		h1::before,
@@ -91,6 +92,19 @@
 
 <body>
 	<h1 aria-label="404 error"></h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mt-5">
+
+				<p class="mt-5">
+					<a class="btn btn-primary btn-lg" href="index.html" role="button">Home</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+
 </body>
 
 </html>

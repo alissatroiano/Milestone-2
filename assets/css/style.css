@@ -432,7 +432,12 @@ p.lead {
     color: #fff;
     margin: 20px 40px 20px 40px;
     padding: 20px 10px;
-    border: 1px solid #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(121, 6, 6);
+    color: #fff;
 }
 
 .bg-black {

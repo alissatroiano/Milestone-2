@@ -35,7 +35,7 @@ h1 {
 /*-------------------------- Header and Navigation */
 
 .fas.fa-crown {
-    color: rgb(176, 13, 13, .8);
+    color: rgb(176, 13, 13);
     text-shadow: 1px 1px 2px rgba(219, 219, 142, 0.4);
     font-size: larger;
 }
@@ -158,7 +158,8 @@ span {
 button#btn0,
 button#btn1,
 button#btn2,
-button#btn3 {
+button#btn3,
+button#btn4 {
     background-color: #000;
     width: 250px;
     font-size: 1.1rem;
@@ -205,12 +206,20 @@ body.modal-open {
     overflow-y: hidden;
 }
 
+.modal-footer {
+    border: 0px;
+    padding-bottom: 1px;
+}
+
 .modal-body {
     background-color: #0a0b0c;
     color: #fafafa;
     font-family: 'Trajan-Pro-3', serif;
     padding-top: 20px;
-    border: none;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #000;
+    text-align: left;
 }
 
 .modal-title {
@@ -277,6 +286,16 @@ img {
     overflow: visible;
     border: none;
 }
+
+#myChart {
+    display: block;
+    clear: both;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+
+  }
+
 
 /*-------------------------- Media Queries */
 @media only screen and (min-width: 768px) {
@@ -349,6 +368,92 @@ img {
     }
 }
 
+/*-------------------------- Cover Page */
+
+/* .bg {
+    background-image: linear-gradient(rgba(26, 5, 5, 0.4),
+    rgba(28, 12, 12, 0.495)), url("images/cover.jpg");
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(240, 240, 240, 0.644), rgba(210, 27, 27, 0.447),
+    rgba(2, 0, 0, 0.536));
+    overflow: hidden;
+}
+
+.jumbotron {
+    font-size: 10vw;
+    line-height: 10vw;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'Trajan-Pro-3', sans-serif;
+    font-weight: 900;
+    background: url("../images/cover.jpg");
+    background-size: 40%;
+    background-position: 100% 100%;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoom 10s ease 500ms forwards;
+  }
+  
+  @keyframes zoom {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+  }
+/* 
+.jumbotron {
+    background-color: transparent;
+} */
+
+p.lead {
+    font-family: 'Futura-PT', serif;
+    letter-spacing: 2px;
+    line-height: normal;
+    color: rgb(235, 235, 235);
+    text-shadow: 1px 1px 3px #4b0404;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    animation: scatter 1.75s infinite;
+}
+
+
+.btn-primary {
+    background-color: #000;
+    width: 150px;
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+    padding: 20px 10px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(121, 6, 6);
+    color: #fff;
+}
+
+.bg-black {
+    background-color: #0a0b0c81;
+}
+
+
+/*-------------------------- Media Queries */
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-md-6"] {

@@ -54,7 +54,7 @@
 		<div class="container-fluid">
 			<div class="row text-center">
 				<!--Question column starts here-->
-				<div class="col-md-6">
+				<div class="col-md-6" id="questions">
 					<div class="quiz-column">
 						<!--Quiz div starts here -->
 						<div id="quiz">
@@ -64,16 +64,18 @@
 							<!--Progress function will display here-->
 							<p id="progress"></p>
 							<!--./end-progress-function-->
-						</div>
+							<div class="answers mt-5 d-md-none">
+								<a href="#answers" class="text-center"><i class="fas fa-chevron-down fa-2x" id="chevron-down"></i></a>
+								</div>
+							</div>
 						<div id="results"></div>
-
 						<!--./end-quiz-->
 						<br>
 					</div>
 				</div>
 				<!--./end-question-column-->
 				<!--Answer column with multiple choices starts here-->
-				<div class="col-md-6">
+				<div class="col-md-6" id="answers">
 					<div class="answer-column">
 						<!--Answer Buttons containing multiple choice answers/options start here-->
 						<div class="buttons">
@@ -82,15 +84,17 @@
 							<button id="btn2"><span id="choice2"></span></button>
 						</div>
 						<!--./end-answer-buttons-->
+						<!--Chevron Up-->
+						<div class="answers mt-5 d-md-none">
+							<a href="#questions" class="text-center"><i class="fas fa-chevron-up fa-2x" id="chevron-up"></i></a>
+							</div>
 					</div>
 				</div>
 				<!--./end-answer-column-->
 			</div>
 		</div>
 		<!--./end-game-container-->
-	</section>
-
-	<!--Correct Answer Modal Starts Here-->
+			<!--Correct Answer Modal Starts Here-->
 	<div class="modal fade" id="modal" tabindex="-1">
 		<div class="modal-dialog modal-full">
 			<div class="modal-content">
@@ -109,6 +113,7 @@
 		</div>
 	</div>
 	<!--./end-correct-answer-modal-->
+	</section>
 
 	<!--How To Play Modal Starts Here-->
 	<div class="modal fade" id="nav-modal" tabindex="-1">
@@ -170,6 +175,12 @@
 		});
 	</script>
 	<!--./remove-active-state-script-->
+
+	<script>
+		$('#modal').on('hide.bs.modal', function () { 
+			window.location = '#questions';
+		});  
+	</script>
 
 	<!-- Load Custom JS Here-->
 	<script src="assets/js/scripts/question.js"></script>

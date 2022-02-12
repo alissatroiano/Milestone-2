@@ -523,7 +523,7 @@ i#chevron-up:hover {
     border-radius: 1rem;
     outline: 0;
     box-shadow: -1px 1px 200px 150px #380a0a5e;
-    margin: 50px 0px;
+    margin-top: 10px;
 }
 
 /*-------------------------- Media Queries */
@@ -611,6 +611,5 @@ i#chevron-up:hover {
         border-radius: 1rem;
         outline: 0;
         box-shadow: -1px 1px 200px 150px #380a0a5e;
-        margin-top: 30px;
     }    
 }

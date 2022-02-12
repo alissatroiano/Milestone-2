@@ -80,6 +80,7 @@ h1 {
     background: rgba(0, 0, 0, 0.7);
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: 100vh;
 }
 
 #question {
@@ -95,9 +96,16 @@ h1 {
     text-shadow: 1px 1px 2px #b00d0d;
     font-size: 1rem;
     text-align: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
     font-family: 'Trajan-Pro-3', serif;
-    padding-bottom: 20px;
+}
+
+i#chevron-down {
+    color: #bd2130;
+}
+
+i#chevron-down:hover {
+    color: #4b0404;
 }
 
 /*------------------------- How To Play Modal */
@@ -137,13 +145,18 @@ div.answer-column {
     text-align: center;
     padding-top: 50px;
     overflow: hidden;
-    /* position: absolute; */
+    position: relative;
     padding-bottom: 50px;
+    margin: 0px auto;
+    min-height: 100vh;
+
+
 }
 
 .buttons {
+    margin-top: 50px;
     font-weight: 300;
-    padding: 60px 30px;
+    padding: 80px 30px;
     text-align: center;
     vertical-align: middle;
     display: inline-grid;
@@ -164,7 +177,7 @@ button#btn4 {
     width: 250px;
     font-size: 1.1rem;
     color: #fff;
-    margin: 20px 40px 20px 40px;
+    margin: 10px auto;
     padding: 20px 20px;
     border: 1px solid #000;
 }
@@ -323,10 +336,6 @@ img {
         display: inline-grid;
     }
 
-    .answer-column {
-        height: 100vh;
-        overflow: hidden;
-    }
 
     #progress {
         color: #fafafa;
@@ -380,22 +389,22 @@ img {
   } */
 
 .bg {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
-    background: linear-gradient(rgba(240, 240, 240, 0.644), rgba(210, 27, 27, 0.447),
+
+    background: linear-gradient(rgba(41, 41, 41, 0.644),  rgba(214, 73, 73, 0.447),rgba(210, 27, 27, 0.447), rgba(214, 73, 73, 0.447),
     rgba(2, 0, 0, 0.536));
     overflow: hidden;
 }
 
 .jumbotron {
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 50px;
+    line-height: 1.2;
     margin-top: 40px;
     margin-bottom: 10px;
     font-family: 'Trajan-Pro-3', sans-serif;

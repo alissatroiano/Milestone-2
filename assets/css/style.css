@@ -476,7 +476,7 @@ img {
     background-size: 40%;
     background-position: 100% 100%;
     -webkit-background-clip: text;
-    color: rgb(177 11 11 / 62%);
+    color: rgb(229 30 30 / 62%);
     animation: zoom 10s ease 500ms forwards;
 }
   @keyframes zoom {

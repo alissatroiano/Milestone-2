@@ -81,17 +81,36 @@ function showProgress() {
 
 // The showScores function uses jQuery to display the scores of the quiz upon completion
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
-    var element = document.getElementById("quiz");
-    element.innerHTML = gameOverHTML;
-    $("#modal").hide();
-    $("div.answer-column").hide();
-    $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
-    $("div#results").css({"width": "100vw", "height": "100vh", "overflow": "hidden", "padding-left": "0", "padding-right": "0"});
+        var gameOverHTML = "";
+        if (quiz.score >= 7) {
+            gameOverHTML += "<h1 class='text-success mx-5'>Bend the knee!</h1>" + "<h3>Your Grace's Score:</h3>" + "<h2 class='text-success' id='score'>" + quiz.score + "</h2>" + "<br>" + "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+        }
+        else {
+        gameOverHTML += "<h1>Your score:</h1>" + "<h2 id='score'>" + quiz.score + "</h2>" + "<br>" + "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+        }
+        var element = document.getElementById("quiz");
+        element.innerHTML = gameOverHTML;
+        $("#modal").hide();
+        $("div.answer-column").hide();
+        $("div.col-md-6").removeClass("col-md-6").addClass("col-12");
+        $("div#results");
+        $("#play-again").on("click", function () {
+            location.reload();
+        });
 }
 
-// The questions array is defined here
+// // Function to display 'Play Again' button when quiz is over
+// function playAgain() {
+//         var playAgainHTML = "<h1>Play Again?</h1>";
+//         playAgainHTML += "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+//         var element = document.getElementById("quiz");
+//         element.innerHTML = playAgainHTML;
+//         $("#play-again").on("click", function () {
+//             location.reload();
+//         });
+//     }
+
+// The questionss array is defined here
 var questions = [
     new Question(
         "Where were the Winterfell castle scenes in Game Of Thrones' first/pilot episode filmed?",

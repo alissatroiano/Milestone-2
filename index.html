@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Import Bootstrap 4-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -14,122 +15,35 @@
 		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	<!--Import Custom Stylesheet-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" type="image/ico" href="assets/images/favicon.ico" />
+	<link rel="shortcut icon" type="image/ico" href="assets/images/favicon.png" />
 	<!--Load jQuery Scripts First To Enter No Conflict Mode-->
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 	<!--Title-->
 	<title>Game Of Facts</title>
 </head>
-<!--Start code copied from webdevtrick (https://webdevtrick.com) and altered by the developer for this project-->
 
-<body>
-	<header>
-		<!-- Navbar copied from getbootstrap.com -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#play"><i class="fas fa-crown"></i> Game Of Facts</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html"> <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#play">Play</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#nav-modal">How To Play</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<!-- Game Container Starts Here -->
-	<section class="play" id="play">
-		<div class="container-fluid">
-			<div class="row text-center">
-				<!--Question column starts here-->
-				<div class="col-md-6">
-					<div class="quiz-column">
-						<!--Quiz div starts here -->
-						<div id="quiz">
-							<!--Questions function will display here-->
-							<p id="question"></p>
-							<!--./end-questions-->
-							<!--Progress function will display here-->
-							<p id="progress"></p>
-							<!--./end-progress-function-->
+<body id="cover">
+	<section class="cover">
+		<div class="bg">
+			<div class="container-fluid">
+				<div class="row text-center">
+					<div class="col-12">
+						<div class="jumbotron">
+							<h1 class="jumbotron">Game Of Facts</h1>
+							<p class="lead my-0">Fun trivia for Game of Thrones fans
+							</p>
+							<hr class="my-4">
+							<p>
+								<a class="btn btn-primary btn-lg" href="game.html" role="button">Play Game</a>
+							</p>
 						</div>
-						<div id="results"></div>
-
-						<!--./end-quiz-->
-						<br>
 					</div>
 				</div>
-				<!--./end-question-column-->
-				<!--Answer column with multiple choices starts here-->
-				<div class="col-md-6">
-					<div class="answer-column">
-						<!--Answer Buttons containing multiple choice answers/options start here-->
-						<div class="buttons">
-							<button id="btn0"><span id="choice0"></span></button>
-							<button id="btn1"><span id="choice1"></span></button>
-							<button id="btn2"><span id="choice2"></span></button>
-						</div>
-						<!--./end-answer-buttons-->
-					</div>
-				</div>
-				<!--./end-answer-column-->
 			</div>
 		</div>
-		<!--./end-game-container-->
-	</section>
-
-	<!--Correct Answer Modal Starts Here-->
-	<div class="modal fade" id="modal" tabindex="-1">
-		<div class="modal-dialog modal-full">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class='col-12 modal-title text-center'>
-					</h5>
-				</div>
-				<div class="modal-body">
-					<img id="image" alt="image" tabindex="0" src="assets/scripts/question.js" />
-					<div id="description"></div>
-				</div>
-				<div class="modal-footer justify-content-center">
-					<button type="button" class="btn btn-danger" data-dismiss="modal" id="close-modal">close</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--./end-correct-answer-modal-->
-
-	<!--How To Play Modal Starts Here-->
-	<div class="modal fade" id="nav-modal" tabindex="-1">
-		<div class="modal-dialog modal-full">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h3 class='col-12 directions-title text-center'>How To Play</h3>
-				</div>
-				<div class="modal-body">
-					<p id="directions-body">Game Of Facts is an interactive learning game about the real-life history
-						that inspired George R.R. Martin's popular book and TV series, 'Game Of Thrones'. <br>Your job
-						here is simple. Just read each question, click on the right answer (if you know it) and read
-						some new interesting facts. Enjoy!</p>
-				</div>
-				<div class="modal-footer justify-content-center">
-					<button type="button" class="btn btn-danger" data-dismiss="modal">I'm Ready!</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--./end-how-to-play-modal-->
-
-	<!-- All Scripts Start Loading Here -->
-
+		</section>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<!--Copied from https://getbootstrap.com/docs/4.5/getting-started/introduction/-->
@@ -142,22 +56,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 		</script>
-
-	<!-- Remove active state script -->
-	<script>
-		$('.navbar-nav li a').on('click', function () {
-			if (!$(this).hasClass('navbar-toggler')) {
-				$('.navbar-collapse').collapse('hide');
-			}
-		});
-	</script>
-	<!--./remove-active-state-script-->
-
-	<!-- Load Custom JS Here-->
-	<script src="assets/js/scripts/question.js"></script>
-	<!--./end-custom-js-script-->
-	<!--./end-scripts-->
-
 </body>
 
 </html>

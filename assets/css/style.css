@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
 body#cover {
-    background: linear-gradient(rgb(0 0 0 / 69%),            rgb(25 24 24 / 88%), rgb(4 4 4 / 82%)), url(../images/cover.jpg);
+    background: linear-gradient(rgb(0 0 0 / 59%),            rgb(0 0 0 / 83%), rgb(0 0 0 / 81%)), url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -10,6 +10,7 @@ body#cover {
     background-repeat: no-repeat;
     /* background-color: black; */
     min-height: 100vh;
+    background-color: #000;
 }
 
 body {
@@ -55,8 +56,16 @@ section #cover {
 h1 {
     font-family: 'Trajan-Pro-3', serif;
     padding-top: 6rem;
-    color: #b00d0d;
+    color: #cdc8c8d6;
     font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Trajan-Pro-3', serif;
+    color: #cdc8c8d6;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -112,7 +121,7 @@ h1 {
     min-height: 100vh;
 }
 
-#question {
+/* #question {
     font-family: 'Trajan-Pro-3', serif;
     font-size: 1.5rem;
     color: #fafafa;
@@ -120,17 +129,47 @@ h1 {
     background-color: transparent;
     margin: 20px 30px;
     line-height: 1.8;
+} */
+
+#question {
+    font-family: 'Trajan-Pro-3', serif;
+    font-size: 1.5rem;
+    color: #fafafa;
+    padding-top: 50px;
+    margin: 50px 30px;
+    line-height: 1.8;
+    padding: 0px 30px;
 }
+
+#choice0, #choice1, #choice2 {
+    font-size: 20px;
+    font-family: 'Trajan-Pro-3', serif;
+    letter-spacing: .5px;
+    color: #fafafa;
+    /* padding-top: 10px; */
+    /* margin: 30px 80px; */
+    margin: 10px 0px;
+    text-align: centter;
+}
+
+.buttons {
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-grid;
+    line-height: 2;
+}
+
 
 #progress {
     color: #DBD8D8;
     text-shadow: 1px 1px 2px #b00d0d;
     font-size: 1rem;
     text-align: center;
-    margin-top: 4rem;
+    /* margin-top: 9rem; */
     font-family: 'Trajan-Pro-3', serif;
-    padding-bottom: 20px;
-
+    /* padding-bottom: 6rem; */
 }
 
 /*------------------------- How To Play Modal */
@@ -180,7 +219,8 @@ div.answer-column {
     text-align: center;
     vertical-align: middle;
     display: inline-grid;
-    margin-top: 100px;
+    /* margin-top: 50px; */
+    /* padding: 20px 20px; */
 }
 
 span {
@@ -196,11 +236,12 @@ button#btn3,
 button#btn4 {
     background-color: #000;
     width: 250px;
-    font-size: 1.1rem;
+    /* font-size: 1rem; */
     color: #fff;
     /* margin: 40px 40px 40px 40px; */
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     border: 1px solid #000;
+    padding: 10px 20px;
 }
 
 button#btn0:hover,
@@ -222,11 +263,12 @@ button#btn3:focus {
 #score {
     font-family: 'Trajan-Pro-3', serif;
     text-transform: uppercase;
-    color: #dad7d7;
+    color: #d61818d4;
     text-align: center;
     font-size: 1.5rem;
     /* letter-spacing: 1px; */
     font-weight: bolder;
+    font-size: 3rem;
 }
 
 
@@ -258,6 +300,15 @@ button#play-again:hover {
     background-color: rgb(121 6 6 / 66%);
 }
 
+div#quiz {
+    margin-top: 80px;
+}
+
+.answers.mt-5.d-md-none {
+    /* position: fixed; */
+    text-align: center;
+}
+
 /*--------------------------  Modal */
 /* Styles for receding modal dialog copied from csstricks <https://css-tricks.com/receding-background-modal-boxes/> */
 #modal {
@@ -281,16 +332,16 @@ body.modal-open {
     background-color: #0a0b0c;
     color: #fafafa;
     font-family: 'Trajan-Pro-3', serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 10px; */
     border: 1px solid #000;
     text-align: left;
 }
 
 .modal-title {
     font-size: 1.5rem;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border: none;
 }
 
@@ -302,7 +353,7 @@ body.modal-open {
     border: none;
     background-color: #0a0b0c;
     /* padding-bottom: 40px; */
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
 }
 
 div#description {
@@ -335,7 +386,7 @@ button#close-modal {
     background-color: rgb(94, 8, 8);
     border: none;
     color: #fafafa;
-    margin: 20px 0px;
+    /* margin: 20px 0px; */
 }
 
 #close-modal:hover {
@@ -365,82 +416,6 @@ img {
   }
 
 
-/*-------------------------- Media Queries */
-@media only screen and (min-width: 768px) {
-    .quiz-column {
-        text-align: center;
-        /* overflow: hidden; */
-        height: 100vh;
-    }
-
-    #question {
-        font-size: 25px;
-        color: #fafafa;
-        padding-top: 130px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        margin: 30px 80px;
-    }
-
-    .buttons {
-        margin-top: 150px;
-        padding: 60px 20px;
-        text-align: center;
-        vertical-align: middle;
-        display: inline-grid;
-    }
-
-    .answer-column {
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    #progress {
-        color: #fafafa;
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 10rem;
-    }
-
-    button#btn0,
-    button#btn1,
-    button#btn2,
-    button#btn3 {
-        background-color: #0a0b0c;
-        font-size: 1.5rem;
-        color: #fff;
-        margin: 20px 40px 20px 40px;
-        padding: 20px 20px;
-        border: none;
-    }
-
-    h1 {
-        padding-top: 15rem;
-    }
-
-    .modal {
-        min-height: 100vh;
-    }
-
-    .modal-open {
-        overflow: visible;
-    }
-
-    .modal-full {
-        min-height: 100vh;
-        max-width: 50%;
-    }
-
-    .modal-title {
-        font-size: 2rem;
-    }
-
-    div#description {
-        font-size: 1.2rem;
-    }
-}
-
 /*-------------------------- Cover Page */
 
 /* .bg {
@@ -460,24 +435,25 @@ img {
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
-    background: linear-gradient(rgb(48 48 48 / 24%), rgb(9 9 9 / 45%), rgb(2 0 0 / 62%));
+    /* flex-wrap: wrap; */
+    /* background: linear-gradient(rgb(80 74 74 / 34%), rgb(9 9 9 / 76%), rgb(2 0 0 / 62%)); */
     overflow: hidden;
 }
 
 .jumbotron {
-    font-size: 10vw;
-    line-height: 10vw;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-size: 65px;
+    /* line-height: 10; */
+    margin-top: 70px;
+    /* margin-bottom: 10px; */
     font-family: 'Trajan-Pro-3', sans-serif;
     font-weight: 900;
     background: url(../images/cover.jpg);
     background-size: 40%;
     background-position: 100% 100%;
     -webkit-background-clip: text;
-    color: rgb(229 30 30 / 62%);
+    color: rgb(255 255 255 / 23%);
     animation: zoom 10s ease 500ms forwards;
+    padding: 0px 0px;
 }
   @keyframes zoom {
     from {
@@ -552,14 +528,13 @@ i#chevron-up:hover {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 100%;
-    height: auto;
+    min-height: fit-content;
     pointer-events: auto;
     background-color: #000;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: 1rem;
     outline: 0;
-    box-shadow: -1px 1px 200px 150px #380a0a5e;
 }
 
 div#questions {
@@ -568,6 +543,23 @@ div#questions {
 
 /*-------------------------- Media Queries */
 @media only screen and (min-width: 768px) {
+
+    .jumbotron {
+        font-size: 85px;
+        /* line-height: 10; */
+        margin-top: 70px;
+        /* margin-bottom: 10px; */
+        font-family: 'Trajan-Pro-3', sans-serif;
+        font-weight: 900;
+        background: url(../images/cover.jpg);
+        background-size: 40%;
+        background-position: 100% 100%;
+        -webkit-background-clip: text;
+        color: rgb(253 253 253 / 18%);
+        animation: zoom 10s ease 500ms forwards;
+        padding: 0px 0px;
+    }
+
     .quiz-column {
         text-align: center;
         /* overflow: hidden; */
@@ -577,16 +569,25 @@ div#questions {
     #question {
         font-size: 25px;
         color: #fafafa;
-        padding-top: 130px;
+        padding-top: 80px;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+        /* margin: 30px 20px; */
+        margin-top: 80px;
+    }
+
+    #choice0, #choice1, #choice2 {
+        font-size: 20px;
+        letter-spacing: .5px;
+        color: #fafafa;
+        font-family: 'Trajan-Pro-3', serif;
         /* margin: 30px 80px; */
     }
 
     .buttons {
-        margin-top: 100px;
-        padding: 60px 20px;
+        margin-top: 90px;
+        padding-top: 100px;
         text-align: center;
         vertical-align: middle;
         display: inline-grid;
@@ -617,7 +618,8 @@ div#questions {
     }
 
     h1 {
-        padding-top: 15rem;
+        padding-top: 10rem;
+        font-size: 3rem;
     }
 
     .modal-open {
@@ -645,6 +647,5 @@ div#questions {
         border: 1px solid rgba(0,0,0,.2);
         border-radius: 1rem;
         outline: 0;
-        box-shadow: -1px 1px 200px 150px #380a0a5e;
     }    
 }

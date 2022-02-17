@@ -81,8 +81,13 @@ function showProgress() {
 
 // The showScores function uses jQuery to display the scores of the quiz upon completion
 function showScores() {
-        var gameOverHTML = "<h1>Result</h1>";
-        gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>" + "<br>" + "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+        var gameOverHTML = "";
+        if (quiz.score >= 7) {
+            gameOverHTML += "<h1 class='text-success mx-5'>Bend the knee!</h1>" + "<h3>Your Grace's Score:</h3>" + "<h2 class='text-success' id='score'>" + quiz.score + "</h2>" + "<br>" + "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+        }
+        else {
+        gameOverHTML += "<h1>Your score:</h1>" + "<h2 id='score'>" + quiz.score + "</h2>" + "<br>" + "<button id='play-again' class='btn btn-primary'>Play Again</button>";
+        }
         var element = document.getElementById("quiz");
         element.innerHTML = gameOverHTML;
         $("#modal").hide();

@@ -1,21 +1,16 @@
 /*-------------------------- Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
-body#cover {
+body {
     background: linear-gradient(rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
+            rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
     font-size: 16px;
     background-repeat: no-repeat;
-    /* background-color: black; */
+    background-color: black;
     min-height: 100vh;
-    background-color: #000;
-}
-
-body {
-    background-color: #000;
 }
 
 #overlay {
@@ -33,8 +28,8 @@ body {
 
 section#play,
 section #cover {
-     background: linear-gradient(rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -137,15 +132,15 @@ h3 {
     font-size: 1.5rem;
     color: #fafafa;
     padding-top: 50px;
-    margin: 50px 30px;
+    margin: 50px 50px;
     line-height: 1.8;
-    padding: 0px 30px;
+    /* padding: 0px 0px; */
 }
 
 #choice0, #choice1, #choice2 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Trajan-Pro-3', serif;
-    letter-spacing: .5px;
+    /* letter-spacing: .5px; */
     color: #fafafa;
     /* padding-top: 10px; */
     /* margin: 30px 80px; */
@@ -236,13 +231,13 @@ button#btn2,
 button#btn3,
 button#btn4 {
     background-color: #000;
-    width: 250px;
+    width: 300px;
     /* font-size: 1rem; */
     color: #fff;
     /* margin: 40px 40px 40px 40px; */
     /* padding: 20px 20px; */
     border: 1px solid #000;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
 }
 
 button#btn0:hover,
@@ -272,43 +267,6 @@ button#btn3:focus {
     font-size: 3rem;
 }
 
-
-/* Results Page */
-
-h2.play-again {
-    margin-top: 50px;
-    font-family: 'Trajan-Pro-3', serif;
-    padding-top: 6rem;
-    color: #da1e1e;
-    font-size: 2rem;
-    text-transform: uppercase;
-    /* letter-spacing: 1px; */
-    /* text-shadow: 1px 3px 1px #4b0404; */
-}
-
-button#play-again {
-    background-color:rgb(176, 13, 13);
-    font-family: 'Trajan-Pro-3', serif;
-    color: #fafafa;
-    text-transform: uppercase;
-    border: none;
-    margin-top: 60px;
-    padding: 20px 20px;
-    font-size: 1.2rem;
-}
-
-button#play-again:hover {
-    background-color: rgb(121 6 6 / 66%);
-}
-
-div#quiz {
-    margin-top: 80px;
-}
-
-.answers.mt-5.d-md-none {
-    /* position: fixed; */
-    text-align: center;
-}
 
 /*--------------------------  Modal */
 /* Styles for receding modal dialog copied from csstricks <https://css-tricks.com/receding-background-modal-boxes/> */
@@ -418,18 +376,7 @@ img {
 
 
 /*-------------------------- Cover Page */
-
-/* .bg {
-    background-image: linear-gradient(rgba(26, 5, 5, 0.4),
-    rgba(28, 12, 12, 0.495)), url("images/cover.jpg");
-    height: 100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
-
-  .bg {
+.bg {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -438,26 +385,26 @@ img {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(63, 62, 62, 0.267),
-    rgba(2, 0, 0, 0.733));
+    background: linear-gradient(rgba(240, 240, 240, 0.644), rgba(210, 27, 27, 0.447),
+    rgba(2, 0, 0, 0.536));
     overflow: hidden;
 }
 
 .jumbotron {
-    font-size: 65px;
-    /* line-height: 10; */
-    margin-top: 70px;
+    font-size: 10vw;
+    /* line-height: 10vw; */
+    /* margin-top: 40px; */
     /* margin-bottom: 10px; */
     font-family: 'Trajan-Pro-3', sans-serif;
     font-weight: 900;
-    background: url(../images/cover.jpg);
+    background: url("../images/cover.jpg");
     background-size: 40%;
     background-position: 100% 100%;
     -webkit-background-clip: text;
-    color: rgb(255 255 255 / 23%);
+    color: rgba(0,0,0,0.08);
     animation: zoom 10s ease 500ms forwards;
-    padding: 0px 20px;
-}
+  }
+  
   @keyframes zoom {
     from {
       background-size: 40%;
@@ -466,10 +413,7 @@ img {
       background-size: 10%;
     }
   }
-/* 
-.jumbotron {
-    background-color: transparent;
-} */
+
 
 p.lead {
     font-family: 'Futura-PT', serif;
@@ -548,17 +492,17 @@ div#questions {
 @media only screen and (min-width: 768px) {
 
     .jumbotron {
-        font-size: 85px;
+        font-size: 80px;
         /* line-height: 10; */
-        margin-top: 70px;
+        /* margin-top: 70px; */
         /* margin-bottom: 10px; */
         font-family: 'Trajan-Pro-3', sans-serif;
-        font-weight: 900;
+        /* font-weight: 900; */
         background: url(../images/cover.jpg);
-        background-size: 40%;
+        background-size: 20%;
         background-position: 100% 100%;
         -webkit-background-clip: text;
-        color: rgb(253 253 253 / 18%);
+        color: rgb(159 156 156 / 8%);
         animation: zoom 10s ease 500ms forwards;
         padding: 0px 0px;
     }
@@ -577,7 +521,7 @@ div#questions {
         padding-right: 20px;
         padding-bottom: 20px;
         /* margin: 30px 20px; */
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 
     #choice0, #choice1, #choice2 {
